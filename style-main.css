@@ -1,27 +1,31 @@
 .navbar {
-
-font-weight: bold;
-background-color: rgba(30, 30, 30, 0.2);
-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
--webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  font-weight: bold;
+  background-color: rgba(30, 30, 30, 0.2);
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 }
 
-@supports (-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
-(backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
-.navbar-b.navbar-reduce {
-transition: all 0.5s ease-in-out;
-padding-top: 15px;
-padding-bottom: 15px;
-background-color: rgba(30, 30, 30, 0.2);
-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
--webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+@supports (-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or (backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
+  .navbar-b.navbar-reduce {
+    transition: all 0.5s ease-in-out;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(30, 30, 30, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  }
 }
-} 
+.nav-link,.navbar-brand{
+  text-decoration:none;
+}
+.navbar-item{
+  display: inline-block;
+}
 
 
 .customer_section {
-    min-height: auto;
-    margin-bottom: 0px;
-    padding-bottom: 20px;
-    letter-spacing: 0px;
-  }
+  min-height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  letter-spacing: 0px;
+}
