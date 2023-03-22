@@ -227,3 +227,112 @@
   width: 16vw;
   text-align: justify;
 }
+
+.why-segways {
+  margin-top: 2%;
+  padding: 0 3%;
+}
+
+.why-segways .why-segways-back{
+  padding: 0 2%;
+}
+
+.why-segways-back .segways-content{
+  position: relative;
+  padding: 0 1%;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+.segways-content .customer h1{
+  text-align: center;
+}
+
+.segways-content .customer h2{
+  margin-top: 2%;
+  text-align: center;
+}
+
+
+/* cards */
+.cust-card{
+  position: relative;
+  margin-top: 2%;
+  height: 50vh;
+}
+.cust-card h3{
+  margin-top: 5%;
+  margin-bottom: 5%;  
+}
+.cust-card  p{
+  line-height: 25px;
+}
+
+
+/* doorstep-card */
+.cust-card .doorstep{
+  text-align: center;
+  width: 25vw;
+}
+
+
+/* affordable-card */
+.cust-card .affordable{ 
+  position: absolute;
+  top: 0;
+  left: 35%;
+  text-align: center;
+  width: 25vw;
+}
+
+/* quick-ride */
+.cust-card .quick-ride{
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 25vw;
+}
+
+
+/* Captain-card */
+.cap-card{
+  position: relative;
+  height: 65vh;
+}
+.cap-card h2{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.cap-card h3{
+  margin-top: 5%;
+  margin-bottom: 5%;  
+}
+.cap-card  p{
+  line-height: 25px;
+}
+
+/*  Zero-pressure*/
+.cap-card .zero-pressure{
+  text-align: center;
+  width: 25vw;
+}
+
+/* Earning */
+.cap-card .earning{
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  text-align: center;
+  width: 25vw;
+}
+/* insured */
+.cap-card .insured{
+  position: absolute;
+  top: 15%;
+  right: 0;
+  text-align: center;
+  width: 25vw;
+}
+
+
