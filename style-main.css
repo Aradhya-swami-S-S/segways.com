@@ -231,4 +231,57 @@
   float: right;
   width: 16vw;
   text-align: justify;
+}    
+.footer{
+  width: 100%;
+  background-color: black;
+  color: white;  
+  padding-top: 40px; 
+  padding-left: 40px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  margin-top: 70px;
+}    
+.list {
+  
+}  
+.list ul {
+  list-style-type: none
+  ;  
+  
+  
+ 
+}    
+.list ul li{
+  display: inline-block;
+}
+.list ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  line-height: 10px; 
+  display: inline-block;
+  padding: 20px;
+}    
+.footer_line{
+  width: 100%;
+
+} 
+.copyright{
+  text-align: center;
+  padding: 10px 0px;
+}   
+.terms, .normal{
+  float: left; 
+  margin-left: 5%;
+}   
+.social_media {
+  clear: left; 
+  width: 40%;
+   margin-left: 37%;
+  
+}   
+.social_media li a i{
+  font-size: 40px;
+  color: white;
 }
