@@ -1,0 +1,170 @@
+.main{
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; 
+    margin-top: 20px;
+    background-color: #e5e1dd;
+    border-radius: 20px;
+}    
+
+.inline-block{
+    display: inline-block;
+}    
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }   
+  .otp{
+    display: inline-block;
+  }
+input, select ,label{
+    display: block;
+}       
+.main h1{
+    font-size: 2.5em;
+}  
+.input {
+    margin-top: 10px;
+    
+    
+}   
+input{
+    letter-spacing: 1px;
+    font-size: 18px;
+
+}    
+.submit{
+    display: inline-block;  
+    width: 49%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid  #c6c6c6;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #E38B29;
+    font-weight: bold;
+    background-color: #FDEEDC;
+}    
+.back{
+    display: inline-block;  
+    width: 49%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid  #c6c6c6;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold; 
+    background-color: #E38B29;
+
+}  
+.back a{
+    text-decoration: none; 
+    color:black ;
+}
+.submit a{
+    text-decoration: none;
+    color: black;
+}
+.input .name{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    border: 1px solid  #c6c6c6;
+    
+}    
+input[type=password] {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    border: 1px solid  #c6c6c6; 
+    font-size: 18px; 
+    color: #7a7979
+}
+.input .select{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    border: 1px solid  #c6c6c6; 
+    font-size: 18px; 
+    color: #7a7979;
+}     
+.input .email{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    border: 1px solid  #c6c6c6;
+}  
+.input .radio .license_text{
+    font-size: 20px;
+    letter-spacing: 1px;
+}     
+.input .radio .radio_fields{
+     margin-top: 10px;
+     padding: 5px 0px;
+     margin-bottom: 10px;
+}
+
+.input .radio .label_of_radio{
+    font-size: 20px;
+    line-height: 10px;
+}
+.half_width{
+    width: 50%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    border: 1px solid  #c6c6c6;
+
+} 
+.radio-input{
+    margin-right: 5px;
+    margin-left: 5px;
+} 
+.number{
+    width: 75%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    border: 1px solid  #c6c6c6;
+    
+}   
+ .otp{ 
+    width: 20%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #c6c6c6;
+    font-size: 18px;
+}
+.underline{
+    color:#7a7979;
+}  
+.font_size{
+    font-size: 18px;
+    margin-left: 10px;
+}  
+.login_link{  
+    
+    width: 40%;
+    margin: auto; 
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px; 
+    margin-bottom: 50px;
+}  
+.login_link a{
+    display: inline-block;
+    margin-left: 1%;
+    
+}
+
