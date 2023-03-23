@@ -101,8 +101,9 @@
   background-color: black;
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
-}  
-#home .content .buttons button a{
+}
+
+#home .content .buttons button a {
   text-decoration: none;
   color: white;
 }
@@ -203,9 +204,11 @@
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
 }
-.safety-content:hover{
+
+.safety-content:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .safety-content .safety-for-all h3 {
   text-align: center;
   font-weight: bolder;
@@ -239,50 +242,52 @@
   padding: 0 3%;
 }
 
-.why-segways .why-segways-back{
+.why-segways .why-segways-back {
   padding: 0 2%;
 }
 
-.why-segways-back .segways-content{
+.why-segways-back .segways-content {
   position: relative;
   padding: 0 1%;
   font-family: 'Albert Sans', sans-serif;
 }
 
-.segways-content .customer h1{
+.segways-content .customer h1 {
   text-align: center;
 }
 
-.segways-content .customer h2{
+.segways-content .customer h2 {
   margin-top: 2%;
   text-align: center;
 }
 
 
 /* cards */
-.cust-card{
+.cust-card {
   position: relative;
   margin-top: 2%;
   height: 50vh;
 }
-.cust-card h3{
+
+.cust-card h3 {
   margin-top: 5%;
-  margin-bottom: 5%;  
+  margin-bottom: 5%;
 }
-.cust-card  p{
+
+.cust-card p {
   line-height: 25px;
 }
 
 
 /* doorstep-card */
-.cust-card .doorstep{
+.cust-card .doorstep {
   text-align: center;
   width: 25vw;
 }
 
 
 /* affordable-card */
-.cust-card .affordable{ 
+.cust-card .affordable {
   position: absolute;
   top: 0;
   left: 35%;
@@ -291,7 +296,7 @@
 }
 
 /* quick-ride */
-.cust-card .quick-ride{
+.cust-card .quick-ride {
   position: absolute;
   top: 0;
   right: 0;
@@ -301,39 +306,43 @@
 
 
 /* Captain-card */
-.cap-card{
+.cap-card {
   position: relative;
   height: 65vh;
 }
-.cap-card h2{
+
+.cap-card h2 {
   margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
 }
-.cap-card h3{
+
+.cap-card h3 {
   margin-top: 5%;
-  margin-bottom: 5%;  
+  margin-bottom: 5%;
 }
-.cap-card  p{
+
+.cap-card p {
   line-height: 25px;
 }
 
 /*  Zero-pressure*/
-.cap-card .zero-pressure{
+.cap-card .zero-pressure {
   text-align: center;
   width: 25vw;
 }
 
 /* Earning */
-.cap-card .earning{
+.cap-card .earning {
   position: absolute;
   top: 15%;
   left: 35%;
   text-align: center;
   width: 25vw;
 }
+
 /* insured */
-.cap-card .insured{
+.cap-card .insured {
   position: absolute;
   top: 15%;
   right: 0;
@@ -343,19 +352,66 @@
 
 
 
-   /* Footer */
-.footer{
-  width: 100%;
-  background-color: rgb(87, 87, 87);
-  color: white;  
-  padding: 40px 40px 10px 40px;
-  margin-top: 70px;
-}    
-  
-.list  li{
-  list-style-type: none; 
-}    
+/* Footer */
+.footer {
+  position: relative;
+  padding: 25px;
+  background-color: #E9F8F9;
+  height: 50vh;
+  font-family: 'Open Sans', sans-serif;
+}
 
+.footer li {
+  list-style-type: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color:black;
+}
+
+.footer .left {
+  position:absolute;
+  top: 25px;
+  left: 5%;
+  width: 25vw;
+}
+.footer .left ul li{
+  font-size: 18px;
+  line-height: 30px;
+}
+.footer .right {
+  position: absolute;
+  top: 25px;
+  right: 5%;
+  width: 15vw;
+  text-align: right;
+}
+.footer .right ul li{
+  font-size: 18px;
+  line-height: 30px;  
+}
+
+.footer .last{
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  bottom: 25% ;
+  color: black;
  
-  
- 
+}
+
+.last .copy{
+  float: left;
+  margin-top: 15px;
+}
+.last .social-media{
+  float: right;
+}
+
+.last li {
+  margin-top: 15px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
