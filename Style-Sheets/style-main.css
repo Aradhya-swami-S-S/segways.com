@@ -4,71 +4,48 @@
   box-sizing: border-box;
 }
 
-.navbar-container {
-  background-color: #c6c6c6;
-
+.navbar-container .navbar{
+  position: fixed;
+  z-index: 5;
+  padding: 0.2rem 3rem;
+  width: 100%;
+  background-color: #cacaca;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar .nav-logo img,h3{
+  vertical-align: middle;
+}
+.navbar .nav-logo h3{
+  display: inline;
 }
 
-.navbar {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.navbar .nav-logo img {
+.navbar-container .navbar .nav-items{
   position: absolute;
-  margin-left: 30px;
-  float: left;
-  top: 10px;
-
+  top: 1.2rem;
+  right: 5rem;
 }
-
-.navbar .nav-logo h3 {
-  position: absolute;
-  top: 15px;
-  left: 140px;
-  font-family: 'Cedarville Cursive', cursive;
-}
-
-.navbar .nav {
-  position: relative;
-  padding: 25px;
-  font-family: 'Open Sans', sans-serif;
-
-}
-
-.navbar .nav li {
+.navbar .nav-items ul li{
+  margin-left: 1.5rem;
   list-style-type: none;
   display: inline-block;
-  vertical-align: middle;
-  font-weight: bolder;
+ 
 }
-
-.navbar .nav li a {
-  color: black;
+.navbar .nav-items ul li a{
   text-decoration: none;
-}
-
-.navbar .nav .item-1 {
-  margin-left: 65%;
-  font-size: 15px;
-}
-
-.navbar .nav .item {
-  margin-left: 2%;
-  font-size: 15px;
+  color: black;
 }
 
 #home {
   background: url(/images/connor-wang-3ttFTqPQs5A-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll; 
-  height: 90vh;
+  background-attachment:scroll; 
+  height: 100vh;
 }
 
 #home .content .heading {
   position: relative;
-  top: 150px;
+  top: 14rem;
   text-align: center;
   color: white;
   letter-spacing: 8px;
@@ -88,17 +65,17 @@
 
 #home .content .buttons {
   position: relative;
-  top: 180px;
+  top: 18rem;
   text-align: center;
 }
 
 #home .content .buttons button {
-  margin: 0 15px;
-  padding: 15px 25px;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
   letter-spacing: 2px;
   border: none;
   border-radius: 25px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -109,7 +86,7 @@
 }
 
 #about {
-  padding: 6% 5%;
+  padding: 5rem 4rem;
   background-color: #FDEEDC;
 
 }
@@ -119,10 +96,10 @@
 }
 
 #about .para {
-  margin-left: 3%;
+  margin-left: 3rem;
   background-color: black;
   color: white;
-  padding: 5% 10% 5% 5%;
+  padding: 4rem 5rem 4rem 5rem;
   width: 50vw;
   font-family: 'Epilogue', sans-serif;
   word-spacing: 0.2em;
@@ -137,7 +114,7 @@
 }
 
 #about .para h3 {
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
   font-size: 35px;
 }
 
@@ -148,8 +125,8 @@
 
 #about .about-img {
   position: absolute;
-  top: 8%;
-  right: 4%;
+  top: 3rem;
+  right: 0.2rem;
 }
 
 
@@ -167,14 +144,14 @@
 
 #safety {
   position: relative;
-  height: 80vh;
+  height: 85vh;
   background-color: #F1A661;
 }
 
 #safety .safety-back .safety-img {
   position: absolute;
-  top: 15%;
-  left: 13%;
+  top: 5rem;
+  left: 7.5rem;
   z-index: 1;
 }
 
@@ -192,12 +169,12 @@
 
 #safety .safety-back .safety-content {
   position: absolute;
-  top: 6%;
-  right: 10%;
-  width: 40vw;
+  top: 2rem;
+  right: 5rem;
+  width: 45vw;
   background-color: #f3ba74;
   color: rgb(0, 0, 0);
-  padding: 1.5rem 1rem 1.5rem 3.9rem;
+  padding: 2rem;
   font-family: 'Epilogue', sans-serif;
   line-height: 25px;
   border-top-left-radius: 50px;
@@ -219,7 +196,7 @@
 }
 
 .safety-content hr {
-  margin: 10px 0px;
+  margin: 0.5rem 0rem;
   border: none;
   border-top: 1px dashed black;
 }
@@ -238,17 +215,17 @@
 }
 
 .why-segways {
-  margin-top: 2%;
-  padding: 0 3%;
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .why-segways .why-segways-back {
-  padding: 0 2%;
+  padding: 0 1rem;
 }
 
 .why-segways-back .segways-content {
   position: relative;
-  padding: 0 1%;
+  padding: 0 0.5rem;
   font-family: 'Albert Sans', sans-serif;
 }
 
@@ -257,7 +234,7 @@
 }
 
 .segways-content .customer h2 {
-  margin-top: 2%;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -265,13 +242,13 @@
 /* cards */
 .cust-card {
   position: relative;
-  margin-top: 2%;
+  margin-top: 1rem;
   height: 50vh;
 }
 
 .cust-card h3 {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 1rem;
+  margin-bottom:1rem;
 }
 
 .cust-card p {
@@ -281,6 +258,7 @@
 
 /* doorstep-card */
 .cust-card .doorstep {
+  margin-left: 1rem;
   text-align: center;
   width: 25vw;
 }
@@ -290,7 +268,7 @@
 .cust-card .affordable {
   position: absolute;
   top: 0;
-  left: 35%;
+  left: 26rem;
   text-align: center;
   width: 25vw;
 }
@@ -299,7 +277,7 @@
 .cust-card .quick-ride {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1rem;
   text-align: center;
   width: 25vw;
 }
@@ -312,14 +290,14 @@
 }
 
 .cap-card h2 {
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
 .cap-card h3 {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .cap-card p {
@@ -328,6 +306,7 @@
 
 /*  Zero-pressure*/
 .cap-card .zero-pressure {
+  margin-left: 1rem;
   text-align: center;
   width: 25vw;
 }
@@ -335,7 +314,7 @@
 /* Earning */
 .cap-card .earning {
   position: absolute;
-  top: 15%;
+  top: 4.6rem;
   left: 35%;
   text-align: center;
   width: 25vw;
@@ -344,8 +323,8 @@
 /* insured */
 .cap-card .insured {
   position: absolute;
-  top: 15%;
-  right: 0;
+  top: 4.6rem;
+  right: 1rem;
   text-align: center;
   width: 25vw;
 }
@@ -355,7 +334,7 @@
 /* Footer */
 .footer {
   position: relative;
-  padding: 25px;
+  padding: 2rem;
   background-color: #E9F8F9;
   height: 50vh;
   font-family: 'Open Sans', sans-serif;
@@ -372,8 +351,8 @@
 
 .footer .left {
   position:absolute;
-  top: 25px;
-  left: 5%;
+  top: 2rem;
+  left: 3.6rem;
   width: 25vw;
 }
 .footer .left ul li{
@@ -382,8 +361,8 @@
 }
 .footer .right {
   position: absolute;
-  top: 25px;
-  right: 5%;
+  top: 2rem;
+  right: 4rem;
   width: 15vw;
   text-align: right;
 }
@@ -394,24 +373,24 @@
 
 .footer .last{
   position: absolute;
-  width: 90%;
-  left: 5%;
-  bottom: 25% ;
+  width: 92%;
+  left: 3rem;
+  bottom: 5rem ;
   color: black;
  
 }
 
 .last .copy{
   float: left;
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 .last .social-media{
   float: right;
 }
 
 .last li {
-  margin-top: 15px;
+  margin-top: 1rem;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 0.6rem;
 }
 
