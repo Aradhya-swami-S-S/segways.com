@@ -6,11 +6,11 @@
 
 
 .main {
-    padding: 1rem;
+    padding: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
-    margin-top: 3.5rem;
+    width: 40%;
+    margin-top: 20px;
     background-color: #e5e1dd;
     border-radius: 20px;
 }
@@ -44,7 +44,7 @@ label {
 }
 
 .input {
-    margin-top: 1rem;
+    margin-top: 10px;
 
 }
 
@@ -57,10 +57,10 @@ input {
 .submit {
     display: inline-block;
     width: 49%;
-    padding: 0.5rem 0.5rem;
+    padding: 10px 5px;
     border-radius: 5px;
     border: 1px solid #c6c6c6;
-    margin-top: 1rem;
+    margin-top: 10px;
     font-size: 20px;
     color: #E38B29;
     font-weight: bold;
@@ -70,10 +70,10 @@ input {
 .back {
     display: inline-block;
     width: 49%;
-    padding: 1rem 0.5rem;
+    padding: 10px 5px;
     border-radius: 5px;
     border: 1px solid #c6c6c6;
-    margin-top: 1rem;
+    margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
     background-color: #E38B29;
