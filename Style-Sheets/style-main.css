@@ -72,21 +72,21 @@
 
 #home .content .heading {
   position: relative;
-  top: 14rem;
+  top: 10em;
   text-align: center;
   color: white;
   letter-spacing: 8px;
 }
 
 #home .content .heading h1 {
-  font-size: 60px;
+  font-size: 4rem;
   font-family: 'Stylish', sans-serif;
 
 }
 
 #home .content .heading p {
   font-family: 'Stylish', sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   letter-spacing: 0;
 }
 
@@ -142,11 +142,11 @@
 
 #about .para h3 {
   margin-bottom: 2rem;
-  font-size: 35px;
+  font-size: 2rem;
 }
 
 #about .para p {
-  font-size: 18px;
+  font-size: 1rem;
   text-align: justify;
 }
 
@@ -158,7 +158,7 @@
 
 
 #about .about-img img {
-  width: 40vw;
+  max-width: 40vw;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -383,7 +383,7 @@
   width: 25vw;
 }
 .footer .left ul li{
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 30px;
 }
 .footer .right {
@@ -394,7 +394,7 @@
   text-align: right;
 }
 .footer .right ul li{
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 30px;  
 }
 
