@@ -9,7 +9,7 @@
   z-index: 2;
   padding: 0.2rem 3rem;
   width: 100%;
-  background-color: #cacaca;
+  background-color: #cacacad6;
   font-family: 'Montserrat', sans-serif;
 }
 .navbar .nav-logo img,h3{
@@ -21,8 +21,8 @@
 
 .navbar-container .navbar .nav-items{
   position: absolute;
-  top: 1.2rem;
-  right: 5rem;
+  top: 1rem;
+  right: 10rem;
 }
 .navbar .nav-items ul li{
   margin-left: 1.5rem;
@@ -35,7 +35,34 @@
   color: black;
 }
 
+.dropdown{
+  position: absolute;
+  top: 0.4rem;
+  right: 3.5rem;
+  background-color: rgba(255, 255, 255, 0.722);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.dropdown a{
+  color: black;
+  text-decoration: none;
+}
+.dropdown .drop-items{
+  display: none;
+}
+.dropdown .drop-items a{
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+}
+
+.dropdown:hover .drop-items{
+  display:block;
+}
+
 #home {
+  margin-top: 3.4rem;
   background: url(/images/connor-wang-3ttFTqPQs5A-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
