@@ -127,7 +127,7 @@
   background-color: black;
   color: white;
   padding: 4rem 5rem 4rem 5rem;
-  width: 50vw;
+  max-width: 50vw;
   font-family: 'Epilogue', sans-serif;
   word-spacing: 0.2em;
   line-height: 25px;
@@ -420,4 +420,7 @@
   display: inline-block;
   margin-right: 0.6rem;
 }
+
+
+
 
