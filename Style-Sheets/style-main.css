@@ -67,12 +67,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:scroll; 
-  height: 100vh;
+  height: 98vh;
 }
 
 #home .content .heading {
   position: relative;
-  top: 10em;
+  top: 8rem;
   text-align: center;
   color: white;
   letter-spacing: 8px;
@@ -92,7 +92,7 @@
 
 #home .content .buttons {
   position: relative;
-  top: 18rem;
+  top: 12rem;
   text-align: center;
 }
 
@@ -113,21 +113,21 @@
 }
 
 #about {
-  padding: 5rem 4rem;
-  background-color: #FDEEDC;
-
-}
-
-#about .about-content {
   position: relative;
+  padding: 3rem 2rem;
+  background-color: #FDEEDC;
 }
+
+/* #about .about-content {
+  position: relative;
+} */
 
 #about .para {
-  margin-left: 3rem;
+  padding: 3rem 4rem 3rem 4rem;
+  margin-left: 5rem;
   background-color: black;
   color: white;
-  padding: 4rem 5rem 4rem 5rem;
-  max-width: 50vw;
+  width: 50%;
   font-family: 'Epilogue', sans-serif;
   word-spacing: 0.2em;
   line-height: 25px;
@@ -152,13 +152,13 @@
 
 #about .about-img {
   position: absolute;
-  top: 3rem;
-  right: 0.2rem;
+  top: 5.5rem;
+  right: 9rem;
 }
 
 
 #about .about-img img {
-  max-width: 40vw;
+  width: 35vw;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -422,5 +422,24 @@
 }
 
 
+/* For Tablet */
+@media (max-width: 800px){ 
+  #about{
+    padding: 0.2rem 1rem;
+  }
+  .para{
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    margin-left: 1rem;
+    word-spacing: 0rem;
+    width: 100% ;
+  }
+  .para .about-heading{
+    font-size: 0.5rem;
+  }
+  .para .about-para{
+    font-size: 0.2rem;
+  }
+
+}
 
 
