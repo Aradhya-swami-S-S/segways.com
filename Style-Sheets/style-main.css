@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.navbar-container .navbar{
+.navbar-container .navbar {
   position: fixed;
   z-index: 2;
   padding: 0.2rem 3rem;
@@ -12,30 +12,35 @@
   background-color: #cacacad6;
   font-family: 'Montserrat', sans-serif;
 }
-.navbar .nav-logo img,h3{
+
+.navbar .nav-logo img,
+h3 {
   vertical-align: middle;
 }
-.navbar .nav-logo h3{
+
+.navbar .nav-logo h3 {
   display: inline;
 }
 
-.navbar-container .navbar .nav-items{
+.navbar-container .navbar .nav-items {
   position: absolute;
   top: 1rem;
   right: 10rem;
 }
-.navbar .nav-items ul li{
+
+.navbar .nav-items ul li {
   margin-left: 1.5rem;
   list-style-type: none;
   display: inline-block;
- 
+
 }
-.navbar .nav-items ul li a{
+
+.navbar .nav-items ul li a {
   text-decoration: none;
   color: black;
 }
 
-.dropdown{
+.dropdown {
   position: absolute;
   top: 0.4rem;
   right: 3.5rem;
@@ -44,21 +49,23 @@
   border-radius: 5px;
 }
 
-.dropdown a{
+.dropdown a {
   color: black;
   text-decoration: none;
 }
-.dropdown .drop-items{
+
+.dropdown .drop-items {
   display: none;
 }
-.dropdown .drop-items a{
+
+.dropdown .drop-items a {
   text-align: center;
   display: block;
   margin-top: 5px;
 }
 
-.dropdown:hover .drop-items{
-  display:block;
+.dropdown:hover .drop-items {
+  display: block;
 }
 
 #home {
@@ -66,7 +73,7 @@
   background: url(/images/connor-wang-3ttFTqPQs5A-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment:scroll; 
+  background-attachment: scroll;
   height: 98vh;
 }
 
@@ -112,21 +119,19 @@
   color: white;
 }
 
+
+/* ABOUT SECTION */
 #about {
   position: relative;
   padding: 3rem 2rem;
   background-color: #FDEEDC;
 }
 
-/* #about .about-content {
-  position: relative;
-} */
-
 #about .para {
   padding: 3rem 4rem 3rem 4rem;
   margin-left: 5rem;
   background-color: black;
-  color: white;
+  color: rgb(223, 223, 223);
   width: 50%;
   font-family: 'Epilogue', sans-serif;
   word-spacing: 0.2em;
@@ -141,30 +146,27 @@
 }
 
 #about .para h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   font-size: 2rem;
 }
 
 #about .para p {
+  margin-top: 0.5rem;
   font-size: 1rem;
   text-align: justify;
 }
 
-#about .about-img {
+#about .image-about {
   position: absolute;
   top: 5.5rem;
   right: 9rem;
-}
-
-
-#about .about-img img {
-  width: 35vw;
+  width: 35%;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
 }
 
-.about-img img:hover {
+.image-about:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -275,7 +277,7 @@
 
 .cust-card h3 {
   margin-top: 1rem;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
 .cust-card p {
@@ -373,19 +375,21 @@
 
 .footer a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
 .footer .left {
-  position:absolute;
+  position: absolute;
   top: 2rem;
   left: 3.6rem;
   width: 25vw;
 }
-.footer .left ul li{
+
+.footer .left ul li {
   font-size: 1.2rem;
   line-height: 30px;
 }
+
 .footer .right {
   position: absolute;
   top: 2rem;
@@ -393,25 +397,27 @@
   width: 15vw;
   text-align: right;
 }
-.footer .right ul li{
+
+.footer .right ul li {
   font-size: 1.2rem;
-  line-height: 30px;  
+  line-height: 30px;
 }
 
-.footer .last{
+.footer .last {
   position: absolute;
   width: 92%;
   left: 3rem;
-  bottom: 5rem ;
+  bottom: 5rem;
   color: black;
- 
+
 }
 
-.last .copy{
+.last .copy {
   float: left;
   margin-top: 1rem;
 }
-.last .social-media{
+
+.last .social-media {
   float: right;
 }
 
@@ -422,24 +428,38 @@
 }
 
 
-/* For Tablet */
-@media (max-width: 800px){ 
-  #about{
-    padding: 0.2rem 1rem;
+/* For Tablet ( about ) */
+@media (max-width: 800px) {
+  #about {
+    position: relative;
+    padding: 2.5rem 1rem 0rem 1rem;
+    background-color: #FDEEDC;
   }
-  .para{
-    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-    margin-left: 1rem;
-    word-spacing: 0rem;
-    width: 100% ;
+
+  #about .para {
+    padding: 2rem 2rem 3.5rem 2rem;
+    margin-left: 2rem;
+    background-color: rgba(255, 255, 255, 0.592);
+    color: rgb(0, 0, 0);
+    width: 90%;
+    line-height: 25px;
+    border-radius: 0px 50px 0px 50px;
   }
-  .para .about-heading{
-    font-size: 0.5rem;
+
+  #about .para h3 {
+    font-size: 2rem;
   }
-  .para .about-para{
-    font-size: 0.2rem;
+
+  #about .para p {
+    font-size: 1.3rem;
+  }
+
+  #about .image-about {
+    position: relative;
+    top: -2.5rem;
+    left: 4rem;
+    width: 80%;
+    border-radius: 50px;
   }
 
 }
-
-
