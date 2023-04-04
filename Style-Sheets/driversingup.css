@@ -9,10 +9,11 @@
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 500px;
     margin-top: 20px;
     background-color: #e5e1dd;
     border-radius: 20px;
+    margin-top: 70px;
 }
 
 .inline-block {
@@ -62,9 +63,9 @@ input {
     border: 1px solid #c6c6c6;
     margin-top: 10px;
     font-size: 20px;
-    color: #E38B29;
-    font-weight: bold;
-    background-color: #FDEEDC;
+     font-weight: bold;
+    background-color: #FDEEDC; 
+  
 }
 
 .back {
@@ -76,18 +77,19 @@ input {
     margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
-    background-color: #E38B29;
+    background-color: #E38B29; 
+    
 
 }
 
 .back a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .submit a {
     text-decoration: none;
-    color: black;
+    color: #E38B29;
 }
 
 .input .name {
@@ -163,17 +165,20 @@ input[type=password] {
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #c6c6c6;
+    margin-right: 10px;
 
 }
 
 .otp {
     width: 20%;
     padding: 10px 0px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #c6c6c6;
-    font-size: 18px;
+    font-size: 18px; 
+    background-color: #E38B29;
+    color: white;
+    font-weight: bold;
 }
 
 .underline {
@@ -182,7 +187,12 @@ input[type=password] {
 
 .font_size {
     font-size: 18px;
-    margin-left: 10px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}   
+.inline-block-1{
+    display: inline-block;
 }
 
 .login_link {
@@ -197,4 +207,24 @@ input[type=password] {
 .login_link a {
     display: inline-block;
     margin-left: 5px;
+}   
+
+@media (max-width:540px){
+
+    .main{
+        width: 300px;
+    } 
+    .number {
+        width: 100%;
+    }  
+    .otp{
+        width: 100%;
+    }  
+    .inline-block-1{
+        display: inline;
+
+    }  
+    .main h1{
+      font-size: 2em;
+    }
 }
