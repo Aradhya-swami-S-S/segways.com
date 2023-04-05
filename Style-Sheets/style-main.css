@@ -5,7 +5,7 @@
 }
 
 .preload{
-  background:#fff url(/images/preloader.gif) no-repeat center center;
+  background:#fff url(../images/preloader.gif) no-repeat center center;
   background-size: 20%;
   height: 100vh;
   width: 100%;
@@ -84,7 +84,7 @@ h3 {
 
 #home {
   margin-top: 3.4rem;
-  background: url(/images/connor-wang-3ttFTqPQs5A-unsplash.jpg);
+  background: url(../images/connor-wang-3ttFTqPQs5A-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -255,16 +255,13 @@ h3 {
 
 }
 
+/* Why segways content (Style) */
 .why-segways {
   margin-top: 2rem;
   padding: 0 1rem;
 }
 
-.why-segways .why-segways-back {
-  padding: 0 1rem;
-}
-
-.why-segways-back .segways-content {
+ .segways-content {
   position: relative;
   padding: 0 0.5rem;
   font-family: 'Albert Sans', sans-serif;
@@ -324,10 +321,11 @@ h3 {
 }
 
 
+
 /* Captain-card */
 .cap-card {
   position: relative;
-  height: 65vh;
+  height: 70vh;
 }
 
 .cap-card h2 {
@@ -356,7 +354,7 @@ h3 {
 .cap-card .earning {
   position: absolute;
   top: 4.6rem;
-  left: 35%;
+  left: 26rem;
   text-align: center;
   width: 25vw;
 }
@@ -480,12 +478,12 @@ h3 {
 @media (max-width: 800px){
   #safety{
     position: relative;
-    height: 100vh;
+    height: 140vh;
   }
   #safety img{
     position: absolute;
-    top: 2rem;
-    left: 7rem;
+    top: 22.5rem;
+    left: 7.5rem;
     width: 68%;
     border-radius: 50px;
   }
@@ -493,7 +491,56 @@ h3 {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
-    width: 90%;
+    width: 90vw;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.276);
+    color: rgb(0, 0, 0);
+    line-height: 20px;
+    border-radius: 50px 50px 0px 50px;
   }
+
+  .safety-content .cust-safety{
+    margin-top: 1.5rem;
+    float: none;
+    width: 100%;
+  }
+  .safety-content .cap-safety{
+    margin-top: 2rem;
+    float: none;
+    width: 100%;
+  }
+
 }
+
+/* For Tablet ( Why-sewgays ) */
+@media (max-width:800px){
+  .why-segways{
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .cust-card {
+    margin-top: 0.5rem;
+  } 
+
+
+  .cust-card .doorstep{
+    width: 30vw;
+  }
+
+  .cust-card .affordable{
+    left: 17rem;
+    width: 30vw;
+  }
+  .cust-card .quick-ride{
+    width: 30vww;
+  }
+
+  .segways-content hr{
+    margin-top: 3rem;
+  }
+
+
+}
+
 
