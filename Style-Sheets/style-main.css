@@ -413,6 +413,8 @@ h3 {
   line-height: 30px;
 }
 
+
+
 .footer .last {
   position: absolute;
   width: 92%;
@@ -422,14 +424,15 @@ h3 {
 
 }
 
+
 .last .copy {
   float: left;
   margin-top: 1rem;
 }
-
-.last .social-media {
+.last .social-media{
   float: right;
 }
+
 
 .last li {
   margin-top: 1rem;
@@ -478,7 +481,7 @@ h3 {
 @media (max-width: 800px){
   #safety{
     position: relative;
-    height: 140vh;
+    height: 105vh;
   }
   #safety img{
     position: absolute;
@@ -519,11 +522,10 @@ h3 {
     padding: 0 0.5rem;
   }
 
+  /* Customer Card */
   .cust-card {
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
   } 
-
-
   .cust-card .doorstep{
     width: 30vw;
   }
@@ -537,10 +539,42 @@ h3 {
   }
 
   .segways-content hr{
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
+  /* Captain Card */
+  .cap-card .zero-pressure{
+    margin-left: 0.5rem;
+    width: 30vw;
+  }
 
+  .cap-card .earning{
+    left: 15.8rem;
+    width: 30vw;
+  }
+  .cap-card .insured{
+    right: 0.5rem;
+    width: 30vw;
+  }
+
+}
+
+/* For Tablet ( Footer ) */
+@media (max-width:800px){
+
+  .footer .right{
+    right: 3.5rem;
+  }
+  .footer .last{
+    bottom: 4rem;
+  }
+  .footer .last .footer_line{
+    width: 95%;
+  }
+  .last .social-media {
+    float: right;
+    margin-right: 2.5rem;
+  }
 }
 
 
