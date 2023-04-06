@@ -481,7 +481,7 @@ h3 {
 @media (max-width: 800px){
   #safety{
     position: relative;
-    height: 105vh;
+    height: 140vh;
   }
   #safety img{
     position: absolute;
