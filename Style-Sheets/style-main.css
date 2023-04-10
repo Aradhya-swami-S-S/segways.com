@@ -306,7 +306,7 @@ h3 {
 .cust-card .affordable {
   position: absolute;
   top: 0;
-  left: 26rem;
+  left: 28rem;
   text-align: center;
   width: 25vw;
 }
@@ -329,7 +329,7 @@ h3 {
 }
 
 .cap-card h2 {
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -354,7 +354,7 @@ h3 {
 .cap-card .earning {
   position: absolute;
   top: 4.6rem;
-  left: 26rem;
+  left: 28rem;
   text-align: center;
   width: 25vw;
 }
@@ -404,7 +404,7 @@ h3 {
   position: absolute;
   top: 2rem;
   right: 4rem;
-  width: 15vw;
+  width: 25vw;
   text-align: right;
 }
 
@@ -543,7 +543,15 @@ h3 {
   }
 
   /* Captain Card */
+  .cap-card{
+    height: 80vh;
+  }
+  .cap-card h2{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+  }
   .cap-card .zero-pressure{
+    margin-top: 3rem;
     margin-left: 0.5rem;
     width: 30vw;
   }
