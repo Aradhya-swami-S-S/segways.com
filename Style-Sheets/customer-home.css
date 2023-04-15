@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .location{
+    position: relative;
+} */
+
+.location .destination-back{
+    position: absolute;
+    top: 8rem;
+    left: 1.5rem;
+    background-color: rgba(234, 238, 241, 0.695);
+    width: 25%;
+    height: 45%;
+    padding:1rem 0rem;
+    border-radius: 15px;
+}
+.destination-back .destination h2{
+    margin-left: 1.5rem;
+}
+.destination .inputs{
+    padding: 0rem 1.5rem;
+}
+
+ .destination .inputs input{
+    border: none;
+
+}
+.destination .inputs #from,#to{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.8rem;
+}
+ .destination .inputs #to{
+    margin-bottom:0.6rem ;
+ }
+ .destination .inputs #date,#time{
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+}
+
+.destination .inputs #time{
+    margin-left:1.9rem;
+}
+
+.destination .search{
+    padding: 1rem;
+    width: 100%;
+    border: none;
+}
+
+
