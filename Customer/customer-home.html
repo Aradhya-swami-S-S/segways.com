@@ -50,31 +50,36 @@
         </div>
 
         <div class="location">
-
             <div class="destination-back">
-               <div class="destination">
-                    <h2>Get a ride</h2>
+                <h1>Book Your Cab Now!</h1>
+                <div class="destination">
+                    <form action="">
+                        <div class="inputs">
+                            <h2>Get a ride</h2>
+                            <input type="text" id="from" placeholder="Pickup Location">
+                            <input type="text" id="to" placeholder="Dropoff Location">
+                            <input type="date" id="date">
+                            <input type="time" id="time" placeholder="Timing">
+                            <button class="search">SEARCH</button>
+                        </div>
+                    </form>
 
-                    <div class="inputs">
-                        <input type="text" id="from" placeholder="Pickup Location">
-                        <input type="text" id="to" placeholder="Dropoff Location">
-                        <input type="date" id="date" >
-                        <input type="time" id="time" placeholder="Timing">
-                        <button class="search">SEARCH</button>
-                    </div>
-
-               </div> 
+                </div>
             </div>
 
             <div class="map">
-                
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d124415.49994111672!2d77.6142848!3d12.9728512!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1681630125559!5m2!1sen!2sin"
+                    width="720" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
 
         </div>
 
-        
 
-        
+
+
 
     </div>
 </body>
