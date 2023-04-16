@@ -1,55 +1,87 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(156, 156, 156);
 }
 
 /* .location{
     position: relative;
 } */
 
-.location .destination-back{
+h1 {
+   text-align: center;
+}
+
+.location .destination-back {
     position: absolute;
     top: 8rem;
     left: 1.5rem;
-    background-color: rgba(234, 238, 241, 0.695);
-    width: 25%;
-    height: 45%;
-    padding:1rem 0rem;
+    background-color: rgb(246, 246, 246);
+    width: 35%;
+    padding: 2.5rem 0rem;
     border-radius: 15px;
+    border: 1px black solid;
 }
-.destination-back .destination h2{
-    margin-left: 1.5rem;
-}
-.destination .inputs{
+
+.destination .inputs {
     padding: 0rem 1.5rem;
+    margin-top: 0.7rem;
 }
 
- .destination .inputs input{
+
+
+
+.destination .inputs input {
     border: none;
-
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
-.destination .inputs #from,#to{
+
+
+.destination .inputs #from,
+#to {
     width: 100%;
     margin-top: 1rem;
     padding: 0.8rem;
 }
- .destination .inputs #to{
-    margin-bottom:0.6rem ;
- }
- .destination .inputs #date,#time{
+
+.destination .inputs #to {
+    margin-bottom: 0.6rem;
+}
+
+
+.destination .inputs #date {
     margin: 0.5rem 0rem;
+    padding: 0.6rem;
+    width: 48%;
+
+}
+
+.destination .inputs #time {
+    margin-left: 0.2rem;
     padding: 0.5rem;
+    width: 50%;
 }
 
-.destination .inputs #time{
-    margin-left:1.9rem;
-}
 
-.destination .search{
+
+.destination .search {
+    /*button*/
     padding: 1rem;
     width: 100%;
     border: none;
+    color: white;
+    background-color: rgb(77, 76, 76);
+    border-radius: 10px;
 }
 
-
+.map iframe {
+    position: absolute;
+    top: 3.7rem;
+    right: 2rem;
+    border-radius: 20px;
+}
