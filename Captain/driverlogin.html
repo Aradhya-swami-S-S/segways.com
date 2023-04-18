@@ -10,29 +10,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Style-Sheets/style-main.css">
-    <link rel="stylesheet" href="/Style-Sheets/driverlogin.css">
+    <link rel="stylesheet" href="../Style-Sheets/style-main.css">
+    <link rel="stylesheet" href="../Style-Sheets/driverlogin.css">
+
+    <script>
+        function emailValid(){
+            var email = document.driverLogin.email.value;
+            var pswd = document.driverLogin.pass.value;
+
+            if(email == "" || pswd == ""){
+                alert("Fill The Form");
+                return false;
+            }
+            else{
+                return true;
+            }
+
+        }
+    </script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="navbar-container">
 
-        <div class="navbar-container">
-            <nav class="navbar" style="top: 0;">
-                <div class="nav-logo">
-                    <img src="/images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" width="48px">
-                    <h3>segways</h3>
+        <nav class="navbar" style="top: 0;">
+            <div class="nav-logo">
+                <img src="../images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" width="48px">
+                <h3>segways</h3>
+            </div>
+
+            <div class="nav-items">
+                <ul class="nav">
+                    <li class="item-1"><a href="../index.html">Home</a> </li>
+                    <li class="item"><a href="#about">About Us</a></li>
+                    <li class="item"><a href="#safety">Safety</a></li>
+                    <li class="item"><a href="/Contact Us/contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <div class="dropdown">
+                <a class="login-link" href="#"><span>Login</span>
+                    <i class="fa-solid fa-caret-down"></i></a>
+                <div class="drop-items">
+                    <a href="../Captain/driverlogin.html"><span>Captain</span></a>
+                    <a href="../Customer/customerlogin.html"><span>User</span></a>
                 </div>
-                <div class="nav-items">
-                    <ul class="nav">
-                        <li class="item-1"><a href="/index.html">Home</a> </li>
-                        <li class="item"><a href="/index.html">About Us</a></li>
-                        <li class="item"><a href="/index.html">Safety</a></li>
-                        <li class="item"><a href="./Contact Us/contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </div>
 
     <div class="login">
@@ -42,17 +66,21 @@
             </p>
         </div>
         <div class="form">
-            <form>
-                <div class="input">
-                    <input type="text" name="" id="email" placeholder="Email or Phone">
-                    <input type="password" name="" id="password" placeholder="Password">
-                </div>
+
+            <form name="driverLogin">
+
+                <input type="email" name="email" id="email" placeholder="Email or Phone">
+                <input type="password" name="pass" id="password" placeholder="Password">
+
                 <p class="forgot">Forgot password?</p>
-                <button type="submit" class="sign_in">Sign in</button>
+
+                <button type="submit" class="sign_in" onclick="return emailValid()">Sign in</button>
+
                 <p class="or">or</p>
 
                 <button type="submit" class="apple"> <i class="fa-brands fa-apple"></i>Sign in with Apple</button>
             </form>
+
         </div>
     </div>
     <div class="down_content">
