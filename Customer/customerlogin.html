@@ -5,46 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>segways-Customer-login</title>
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" >
-    <link rel="stylesheet" href="/Style-Sheets/style-main.css">
-    <link rel="stylesheet" href="/Style-Sheets/customerlogin.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../Style-Sheets/style-main.css">
+    <link rel="stylesheet" href="../Style-Sheets/customerlogin.css">
+
+    <script>
+
+        function numberValid() {
+            var phoneNo = document.custLogin.pnum.value;
+
+            if (phoneNo == "") {
+                alert("You have to Enter your Mobile No");
+                return false;
+            }
+            else if (phoneNo.length<10 || phoneNo.length>10) {
+                alert("Enter Correct Format of Mobile No");
+                return false;
+            }
+            else {
+                return true;
+            }
+
+        }
+    </script>
 </head>
 
 <body>
-    <div class="container">
 
-        <div class="navbar-container">
+    <div class="navbar-container">
 
-            <div class="navbar">
-                <div class="nav-logo">
-                    <img src="/images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" width="45px">
-                    <h3>segways</h3>
-                </div>
-                <ul class="nav">
-                    <li class="item-1">Home</li>
-                    <li class="item">About Us</li>
-                    <li class="item">Safety</li>
-
-                    <li class="item">Contact Us</li>
-                </ul>
+        <nav class="navbar" style="top: 0;">
+            <div class="nav-logo">
+                <img src="../images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" width="48px">
+                <h3>segways</h3>
             </div>
-        </div>
+
+            <div class="nav-items">
+                <ul class="nav">
+                    <li class="item-1"><a href="../index.html">Home</a> </li>
+                    <li class="item"><a href="#about">About Us</a></li>
+                    <li class="item"><a href="#safety">Safety</a></li>
+                    <li class="item"><a href="/Contact Us/contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <div class="dropdown">
+                <a class="login-link" href="#"><span>Login</span>
+                    <i class="fa-solid fa-caret-down"></i></a>
+                <div class="drop-items">
+                    <a href="/Captain/driverlogin.html"><span>Captain</span></a>
+                    <a href="/Customer/customerlogin.html"><span>User</span></a>
+                </div>
+            </div>
+        </nav>
     </div>
     <!-- Verify and log in
  -->
     <!-- Enter the OTP sent to your mobile -->
-    <div class="login">
+    <div class="login" style="margin-top: 8rem;">
+
+
         <div class="heading">
             <h1>Verify and log in</h1>
             <p style="font-size: 18px;">Enter the OTP sent to your mobile </p>
         </div>
+
         <div class="input">
-            <input type="number" name="" id="" placeholder="Enter your Phone number">
-            <input type="number" name="" id="" placeholder="Enter OTP">
+
+            <form  name="custLogin">
+                <input type="tel" name="pnum" id="" value="" placeholder="Enter your Phone number">
+                <input type="number" name="" id="" placeholder="Enter OTP">
+
+                <button type="submit" onclick="return numberValid()"> Log in </button>
+            </form>
+            
         </div>
-        <button type="submit"> <a href="./bookbike.html">Log in</a> </button>
+
     </div>
+
     <div class="down_content">
         <p>New to Segways? <a href="./customersignup.html"> Join now</a></p>
     </div>
