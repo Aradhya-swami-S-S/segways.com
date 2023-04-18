@@ -1,60 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>segways-Customer-signup</title> 
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" >
-    <link rel="stylesheet" href="/Style-Sheets/style-main.css">
-    <link rel="stylesheet" href="/Style-Sheets/customersignup.css">
-</head>
-<body>
-    <div class="container">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>segways-Customer-signup</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../Style-Sheets/style-main.css">
+    <link rel="stylesheet" href="../Style-Sheets/customersignup.css">
 
-        <div class="navbar-container">
-    
-            <div class="navbar">
-                <div class="nav-logo">
-                    <img src="/images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" width="45px">
-                    <h3>segways</h3>
-                </div>
+
+    <!-- <script>
+
+        function numberValid() {
+            var phoneNo = document.cust - signup.pnum.value;
+
+            if (phoneNo == " ") {
+                alert("You have to Enter your Mobile No");
+                return false;
+            }
+            else if (phoneNo.length < 10 & phoneNo.length > 10) {
+                alert("Enter Correct Format of Mobile No");
+                return false;
+            }
+            else {
+                return true;
+            }
+
+        }
+    </script> -->
+
+
+</head>
+
+<body>
+
+
+    <div class="navbar-container">
+
+        <nav class="navbar" style="top: 0;">
+            <div class="nav-logo">
+                <img src="../images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" width="48px">
+                <h3>segways</h3>
+            </div>
+
+            <div class="nav-items">
                 <ul class="nav">
                     <li class="item-1"><a href="#home">Home</a> </li>
                     <li class="item"><a href="#about">About Us</a></li>
                     <li class="item"><a href="#safety">Safety</a></li>
-                   
-                    <li class="item">Contact Us</li>
+                    <li class="item"><a href="/Contact Us/contact.html">Contact Us</a></li>
                 </ul>
+
             </div>
-        </div> 
-    </div>  
-    <div class="signup">  
+            <div class="dropdown">
+                <a class="login-link" href="#"><span>Login</span>
+                    <i class="fa-solid fa-caret-down"></i></a>
+                <div class="drop-items">
+                    <a href="/Captain/driverlogin.html"><span>Captain</span></a>
+                    <a href="/Customer/customerlogin.html"><span>User</span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="signup" style="margin-top: 3.5rem;">
+
         <div class="heading">
             <h1>Create your segways Account</h1>
-        <p style="font-size: 18px;">Enter your details to create an account</p>
+            <p style="font-size: 18px;">Enter your details to create an account</p>
         </div>
-        
-        <form>  
-            <div class="input">
-                <input type="number" name="" id="" placeholder="Enter you phone number" required class="otp">
-                <button type="submit" class="otp_button">Get OTP</button>
-            <input type="number" name="" id="" placeholder="Enter OTP" required >  
-            
-            <input type="text" name="" id="" placeholder="Enter  your Full name"  required>
-            <input type="email" name="" id="" placeholder="Enter your Email (Optional)"> 
-            </div>
-            
-            <button type="submit" class="submit">Sign up</button>
-        </form>  
-    </div>    
+
+
+        <form name="cust-signup">
+
+            <input type="number" name="pnum" id="" placeholder="Enter you phone number" class="otp">
+            <button type="submit" class="otp_button" >Get OTP</button>
+
+
+            <input type="number" name="" id="" placeholder="Enter OTP">
+
+            <input type="text" name="fname" id="" placeholder="Enter  your Full name">
+            <input type="email" name="email" id="" placeholder="Enter your Email (Optional)">
+
+
+            <button type="submit" class="submit" >Sign up</button>
+        </form>
+    </div>
+
+
     <div class="down_content">
         <p>Already on Segways? <a href="./customerlogin.html"> Sign in</a></p>
     </div>
 
+
+
+
+
 </body>
-</html>   
+
+</html>
 
 
 <!-- Create your Ola account
-Enter your details to create an account -->   
+Enter your details to create an account -->
