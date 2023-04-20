@@ -14,22 +14,22 @@
   <link rel="stylesheet" href="../Style-Sheets/driversingup.css">
 
   <script>
-    function formValid() {
-      var name = document.driverSignup.name.value;
-      var city = document.driverSignup.city.value;
-      var email = document.driverSignup.email.value;
-      var paswd = document.driverSignup.paswd.value;
-      var pnum = document.driverSignup.pnum.value;
-      var otp = document.driverSignup.otp.value;
 
-      if (name == "" || city == "") {
-        alert("Fill the from ");
+    var name = document.getElementById("fname").value;
+    
+    function ValidateFrom(){
+    }
+
+    function ValidateCity(){
+      if(document.driverSignup.city.value == "select"){
+        alert("Please Select City");
         return false;
       }
-      else {
+      else{
         return true;
       }
     }
+
   </script>
 </head>
 
@@ -66,11 +66,11 @@
 
   <div class="main">
 
-    <form name="driverSignup">
+    <form name="driverSignup" onsubmit="return ValidateCity(this)">
       <!-- <i class="fa-solid fa-circle-xmark"></i> -->
       <h1>Become a Captain</h1>
       <div class="input">
-        <input type="text" name="name" id="" placeholder="Enter your Full Name" class="name">
+        <input type="text" name="name" id="fname" placeholder="Enter your Full Name" class="name">
         <select name="city" id="" class="select">
           <option value="select" selected disabled>Select your City</option>
           <option value="Adilabad">Adilabad</option>
