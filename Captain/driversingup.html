@@ -15,12 +15,35 @@
 
   <script>
 
-    var name = document.getElementById("fname").value;
-    var license = document.getElementsByClassName("radio-input");
-    
-    
-    function ValidateFrom(){
+
+    function ValidateForm(){
+
+      
+      var FullName = document.getElementById("fname").value;
+      var email = document.getElementById("email").value;
+      var paswd = document.getElementById("paswd").value;
+      var phoneNum = document.getElementById("phoneNum").value;
+      var otp = document.getElementById("otp").value;
+
+
+      if(FullName == "" || email == ""){
+        alert("Please Fill Form");
+        return false;
+      }
+      else if(paswd == "" || phoneNum == ""){
+        alert("Please Fill Form");
+        return false;
+      }
+      else if(otp == ""){
+        alert("Please Fill Form");
+        return false;
+      }
+      else {
+        return true;
+      }
+
     }
+
 
     function ValidateCity(){
       if(document.driverSignup.city.value == "select"){
@@ -72,7 +95,7 @@
       <!-- <i class="fa-solid fa-circle-xmark"></i> -->
       <h1>Become a Captain</h1>
       <div class="input">
-        <input type="text" name="name" id="fname" placeholder="Enter your Full Name" class="name">
+        <input type="text" name="fname" id="fname" placeholder="Enter your Full Name" class="name">
         <select name="city" id="" class="select">
           <option value="select" selected disabled>Select your City</option>
           <option value="Adilabad">Adilabad</option>
@@ -718,9 +741,9 @@
           <p class="license_text">Do you have driving license</p>
 
           <div class="radio_fields">
-            <input type="radio" name="license" id="radio" class="inline-block radio-input">
+            <input type="radio" name="license" id="radio" class="inline-block radio-input" required>
             <label for="yes" class="inline-block label_of_radio">YES</label>
-            <input type="radio" name="license" id="radio" class="inline-block radio-input">
+            <input type="radio" name="license" id="radio" class="inline-block radio-input" required>
             <label for="no" class="inline-block label_of_radio">NO</label> <br>
           </div>
 
@@ -728,9 +751,9 @@
 
         <input type="email" name="email" id="email" placeholder="Enter your Email" class="email">
         <input type="password" name="pswd" id="paswd" placeholder="Enter your Password" class="inline-block password">
-        <input type="number" name="pnum" id=""  class="inline-block number" placeholder="Enter your Phone Number">
+        <input type="number" name="pnum" id="phoneNum"  class="inline-block number" placeholder="Enter your Phone Number">
         <button  class="otp">Get OTP</button>
-        <input type="number" name="otp" id="" placeholder="Enter OTP" class="half_width" >
+        <input type="number" name="otp" id="otp" placeholder="Enter OTP" class="half_width" >
 
         <div class="checkbox">
           <input type="checkbox" name="" id="" class="inline-block-1" >
@@ -740,8 +763,8 @@
 
       </div>
       
-      <button type="reset" class="back"> <a href="/index.html">Cancel</a> </button>
-      <button type="submit" class="submit" > Submit </button>
+      <button type="reset" class="back"> <a href=".. /index.html">Cancel</a> </button>
+      <button type="submit" class="submit" onclick="return ValidateForm()" > Submit </button>
 
 
     </form>
