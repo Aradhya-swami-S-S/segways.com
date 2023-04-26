@@ -5,26 +5,63 @@
 }
 
 body {
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(210, 210, 210);
 }
 
-/* .location{
+
+.menu-back {
     position: relative;
-} */
-
-h1 {
-   text-align: center;
+    top: 1rem;
 }
 
-.location .destination-back {
+.menu-back .menu {
     position: absolute;
-    top: 8rem;
-    left: 1.5rem;
-    background-color: rgb(246, 246, 246);
-    width: 35%;
+    top: 3.5rem;
+    left: 15rem;
+    padding: 1rem 0.5rem;
+    background-color: rgb(225, 225, 225);
+    border-radius:  15px ;
+}
+
+.menu-back .menu .menu-list {
+    list-style-type: none;
+}
+
+.menu-list li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 2rem;
+}
+.menu-list li a i{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 0.3rem;
+}
+
+
+.menu-list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+.location {
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+    background-color: rgb(225, 225, 225);
+    width: 95%;
     padding: 2.5rem 0rem;
-    border-radius: 15px;
-    border: 1px black solid;
+    border-radius:  15px ;
+    /* border: 1px black solid; */
+}
+
+.location h1 {
+    text-align: center;
 }
 
 .destination .inputs {
@@ -32,39 +69,37 @@ h1 {
     margin-top: 0.7rem;
 }
 
-
-
-
 .destination .inputs input {
     border: none;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(246, 246, 246);
     border-radius: 10px;
 }
 
 
 .destination .inputs #from,
 #to {
-    width: 100%;
+    width: 30%;
     margin-top: 1rem;
-    padding: 0.8rem;
+    padding: 1.5rem 1rem;
 }
 
 .destination .inputs #to {
+    margin-left: 0.5rem;
     margin-bottom: 0.6rem;
 }
 
 
 .destination .inputs #date {
-    margin: 0.5rem 0rem;
-    padding: 0.6rem;
-    width: 48%;
+    margin-left: 0.5rem;
+    padding: 1.5rem 1rem;
+    width: 18%;
 
 }
 
 .destination .inputs #time {
-    margin-left: 0.2rem;
-    padding: 0.5rem;
-    width: 50%;
+    margin-left: 0.5rem;
+    padding: 1.5rem 1rem;
+    width: 18%;
 }
 
 
@@ -72,16 +107,18 @@ h1 {
 .destination .search {
     /*button*/
     padding: 1rem;
-    width: 100%;
+    width: 25%;
     border: none;
     color: white;
     background-color: rgb(77, 76, 76);
     border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-left: 25rem;
 }
 
-.map iframe {
+/* .map iframe {
     position: absolute;
     top: 3.7rem;
     right: 2rem;
     border-radius: 20px;
-}
+} */
