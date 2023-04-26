@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(210, 210, 210);
+}
+.profile{
+    position: relative;
+}
+.profile .image{
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    width: 20%;
+    text-align: center;
+}
+
+.profile .profile-info{
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    width: 45%;
+}
