@@ -25,7 +25,7 @@
             else{
                 return true;
             }
-
+      event.preventDefault();
         }
     </script>
 </head>
@@ -62,7 +62,7 @@
     <div class="login">
         <div class="heading">
             <h1>Sign in</h1>
-            <p>
+            <p> Driver login
             </p>
         </div>
         <div class="form">
@@ -72,13 +72,14 @@
                 <input type="email" name="email" id="email" placeholder="Email or Phone">
                 <input type="password" name="pass" id="password" placeholder="Password">
 
-                <p class="forgot">Forgot password?</p>
+                <a href="" class="forgot">Forgot password?</a>
+              
+                <a href="./captain-home.html" class="sign_in">
+                Sign in</a>
 
-                <button type="submit" class="sign_in" onclick="return emailValid()">Sign in</button>
+                
 
-                <p class="or">or</p>
-
-                <button type="submit" class="apple"> <i class="fa-brands fa-apple"></i>Sign in with Apple</button>
+                
             </form>
 
         </div>
