@@ -1,7 +1,7 @@
 .login {
    width: 40%;
    margin: auto;
-   background-color: #FDEEDC;
+   background-color: #EFEFEF;
    box-shadow: 0px 0px 10px 5px #f2f2f2;
    padding: 20px 20px;
    margin-top: 20px;
@@ -31,32 +31,31 @@ h1 {
    letter-spacing: 1px;
 }
 
-/* Chrome, safari ,Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
-}
 
-/* firefox */
-input[type=number] {
-   -moz-appearnce: textfield;
-}
-
-button {
-
+.btn {
+  display: inline-block;
    width: 100%;
    padding: 15px 0px;
    border: none;
    border-radius: 25px;
    margin-top: 10px;
    background: #ffffff;
-   color: #F1A661;
+   color: black;
    font-weight: bolder;
    letter-spacing: 1px;
-   font-size: 20px;
+   font-size: 20px;  
+   cursor: pointer;
+   text-decoration: none;
+   text-align: center;
 }
+.forgot {
+   padding: 5px 0px;
+   font-size: 18px;
+   font-weight: bold;
+   color: black; 
+   text-decoration: none;
 
+}
 .down_content {
    padding: 10px 0px;
    width: 40%;
@@ -73,7 +72,7 @@ button {
 }
 
 .down_content a {
-   color: #F1A661;
+   color: black;
    font-weight: bold;
 
 }

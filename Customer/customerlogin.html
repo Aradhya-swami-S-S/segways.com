@@ -12,23 +12,15 @@
     <link rel="stylesheet" href="../Style-Sheets/customerlogin.css">
 
     <script>
+   document.addEventListener("DOMContentLoaded",function(){
+    document.getElementById("btn").addEventListener("click",function formValid() {
+           
 
-        function numberValid() {
-            var phoneNo = document.custLogin.pnum.value;
-
-            if (phoneNo == "") {
-                alert("You have to Enter your Mobile No");
-                return false;
-            }
-            else if (phoneNo.length<10 || phoneNo.length>10) {
-                alert("Enter Correct Format of Mobile No");
-                return false;
-            }
-            else {
-                return true;
-            }
-
-        }
+        } 
+    )
+   });
+        
+        
     </script>
 </head>
 
@@ -69,16 +61,17 @@
 
         <div class="heading">
             <h1>Verify and log in</h1>
-            <p style="font-size: 18px;">Enter the OTP sent to your mobile </p>
+            <p>To get a ride</p>
         </div>
 
         <div class="input">
 
             <form  name="custLogin">
-                <input type="tel" name="pnum" id="" value="" placeholder="Enter your Phone number">
-                <input type="number" name="" id="" placeholder="Enter OTP">
-
-                <button type="submit" onclick="return numberValid()"> Log in </button>
+                <input type="email" name="email" id="" value="" placeholder="Enter your Email">
+                <input type="password" name="" id="" placeholder="Enter password">  
+                <a href="#" class="forgot">Forgot password?</>
+             <a href="./customer-home.html" target="_self" id="btn" class="btn" >
+                Log in</a>
             </form>
             
         </div>
