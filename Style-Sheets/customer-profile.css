@@ -7,9 +7,7 @@
 body {
     background-color: rgb(245, 245, 245);
 }
-li{
-    margin: 0 1rem;
-}
+
 
 .profile {
     position: relative;
@@ -40,9 +38,7 @@ li{
     border-radius: 15px;
 
 }
-form{
-    padding: 1rem;
-}
+
 .profile-info .fname {
     width: 50%;
     float: left;
@@ -146,29 +142,3 @@ form{
     border-radius: 2px;
     width: 90%; 
 }
-
-
-
-
-
-
-/*
-.profile-info #gender {
-    padding: 0.5rem 2rem;
-    width: 25%;
-    border: 1.5px solid black;
-    border-radius: 2px;
-    background-color: rgb(225, 225, 225);
-}
-
-.profile-info p {
-    background-color: rgb(225, 225, 225);
-    padding: 0.5rem 1rem;
-    width: 25%;
-    border: 1.5px solid black;
-    border-radius: 2px;
-}
-
-.profile-info .emergency {
-    width: 50%;
-} */
