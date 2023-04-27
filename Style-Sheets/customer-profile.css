@@ -30,8 +30,8 @@ body {
 .profile .profile-info {
     position: absolute;
     top: 10rem;
-    right: 15rem;
-    width: 45%;
+    right: 20rem;
+    width: 40%;
     font-size: 20px;
     padding: 1rem;
     background-color: rgb(225, 225, 225);
