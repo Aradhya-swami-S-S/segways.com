@@ -23,12 +23,14 @@ body {
 
 .menu-back .menu .menu-list {
     list-style-type: none;
+    padding-right: 2rem;
 }
 
 .menu-list li {
     display: inline-block;
     text-align: center;
     margin-left: 2rem;
+    
 }
 .menu-list li a i{
     font-weight: bolder;
