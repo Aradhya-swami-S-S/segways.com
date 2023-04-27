@@ -5,10 +5,8 @@
 }
 
 body {
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(245, 245, 245);
 }
-
-
 .menu-back {
     position: relative;
     top: 1rem;
@@ -19,7 +17,7 @@ body {
     top: 3.5rem;
     left: 15rem;
     padding: 1rem 0.5rem;
-    background-color: rgb(225, 225, 225);
+    background-color: #efefef;
     border-radius:  15px ;
 }
 
@@ -53,7 +51,7 @@ body {
     position: relative;
     top: 10rem;
     left: 2rem;
-    background-color: rgb(225, 225, 225);
+    background-color: #efefef;
     width: 95%;
     padding: 2.5rem 0rem;
     border-radius:  15px ;
