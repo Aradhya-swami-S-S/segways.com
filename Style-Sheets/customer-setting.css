@@ -1,11 +1,37 @@
-.setting{
+.setting {
     position: absolute;
-    top: 15rem;
-    left: 10rem;
+    top: 10rem;
+    left: 19rem;
     width: 50%;
     padding: 1rem;
+    background-color: #efefef;
+    border-radius: 15px;
 }
 
-.setting ul{
+.setting h1 {
+    text-align: center;
+}
+
+.setting ul {
     list-style-type: none;
+    text-align: center;
+    margin-top: 2rem;
+}
+.setting ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+
+.setting ul li a {
+    text-decoration: none;
+    color: rgb(226, 163, 44);
+    display: block;
+
+
+}
+
+.general-setting-ul li a i {
+    font-size: 25px;
 }
