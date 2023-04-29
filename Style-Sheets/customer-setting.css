@@ -35,3 +35,46 @@
 .general-setting-ul li a i {
     font-size: 25px;
 }
+
+#fav-hide{
+    display: none;
+    width: 60%;
+    position: absolute;
+    top: 9.5rem;
+    left: 8rem;
+    background-color: #efefef;
+    padding: 1rem;
+    border-radius:  15px;
+}
+#fav:hover #fav-hide{
+    display: block;
+}
+
+
+#abt:hover #about-list{
+    display: block;
+}
+
+#about-list { 
+    display: none;
+    position: absolute;
+    top: 8rem;
+    right: 10rem;
+    background-color: #efefef;
+    padding: 1rem;
+    border-radius:  15px;
+}
+
+#about-list ul {
+    list-style-type: none;
+}
+#about-list ul li{
+    margin: 1rem 0rem;
+    text-align: center;
+    display: block !important;
+}
+
+#about-list ul li a{
+    text-decoration: none;
+    color: black;
+}
