@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@250&display=swap" rel="stylesheet">
+
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -65,8 +67,8 @@
                     <a href="./customer-setting.html">Settings</a>
                 </li>
                 <li>
-                    <a href=""><i class="fa-solid fa-headset"></i></a>
-                    <a href="">Support</a>
+                    <a href="./customer-support.html"><i class="fa-solid fa-headset"></i></a>
+                    <a href="./customer-support.html">Support</a>
                 </li>
                 <li>
                     <a href=""> <i class="fa-solid fa-wallet"></i></a>
@@ -83,34 +85,53 @@
 
     <div class="setting-container">
         <div class="setting">
-            <h1>General</h1>
+            <h1>General | Settings</h1>
             <ul class="general-setting-ul">
                 <li>
                     <a href="./customer-profile.html"><i class="fa-regular fa-user"></i></a>
                     <a href=""><b>Profile Setting</b></a>
                 </li>
-                <li>
+
+                <li id="fav">
                     <a href=""><i class="fa-solid fa-heart"></i></a>
                     <a href=""><b>Favorites</b></a>
+                    <div id="fav-hide">
+                        You have not added any Favorite rides
+                    </div>
                 </li>
-                <li>
-                    <a href=""><i class="fa-solid fa-circle-info"></i></a>
-                    <a href=""><b>About</b></a>
+
+                <li id="abt">
+                    <a href="" ><i class="fa-solid fa-circle-info"></i></a>
+                    <a href="" ><b>About</b></a>
+                    <div id="about-list">
+                        <ul>
+                            <li><a href="https://www.rapido.bike/Privacy">Terms & Conditions</a></li>
+                            <li><a href="https://www.rapido.bike/CustomerTerms">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </li>
+
                 <li>
-                    <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
-                    <a href=""><b>Logout</b></a>
+                    <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+                    <a href="../index.html"><b>Logout</b></a>
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class="about-list">
-        <ul>
-            <li><a href="https://www.rapido.bike/Privacy">Terms & Conditions</a></li>
-            <li><a href="https://www.rapido.bike/CustomerTerms">Privacy Policy</a></li>
-        </ul>
-    </div>
+
+    <!-- <script>
+        var hover = document.getElementById('abt');
+        var hiddenDiv = document.getElementById('about-list');
+
+        hover.addEventListener('mouseover', function handleMouseOverEvent() {
+            hiddenDiv.style.display = 'block';
+        });
+
+        hover.addEventListener('mouseout', function handleMouseOutEvent() {
+            hiddenDiv.style.display = 'none';
+        });
+    </script> -->
 </body>
 
 </html>
