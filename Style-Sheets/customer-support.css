@@ -1,0 +1,36 @@
+#support-container{
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    padding: 2rem;
+    width: 95%;
+    background-color: #efefef;
+    border-radius: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#support{
+    padding: 1rem;
+}
+
+#support ul{
+    list-style-type: none;
+}
+#support ul li h3{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+#support ul li h2 i{
+    margin-right: 0.5rem;
+}
+#support ul li p {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+#support ol li{
+    margin-left: 2rem;
+    text-align: justify;
+    margin: 1rem 0 0.5rem 2rem;
+}
