@@ -19,6 +19,7 @@ body {
     padding: 1rem 0.5rem;
     background-color: #efefef;
     border-radius:  15px ;
+    font-family: 'Kanit', sans-serif;
 }
 
 .menu-back .menu .menu-list {
