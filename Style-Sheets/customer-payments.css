@@ -1,0 +1,73 @@
+#payment-container{
+    position:absolute ;
+    top: 10rem;
+    left: 9rem;
+    width: 35%;
+    padding: 1.5rem;
+    background-color: #efefef;
+    border-radius: 15px;
+    font-family: 'Nunito', sans-serif;
+
+}
+#online-payments h2{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom:0.5rem ;
+    border-bottom: 1px dashed black;
+}
+#online-payments div{
+    margin: 1.5rem 0rem;
+}
+
+#online-payments img{
+    vertical-align: middle;
+}
+#online-payments h3{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+#online-payments a{
+    float: right;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+#online-payments a i{
+    margin-left: 0.5rem;
+    color: black;
+}
+
+#offline-payment{
+    position:absolute ;
+    top: 10rem;
+    right: 9rem;
+    width: 30%;
+    padding: 1.5rem;
+    background-color: #efefef;
+    border-radius: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+#offline-payment h2{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom:0.5rem ;
+    border-bottom: 1px dashed black;
+}
+
+#offline-payment .cash{
+    margin: 1.5rem 0;
+}
+#offline-payment .cash img{
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: green;
+    padding: 2px;
+}
+#offline-payment .cash h3{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+
+
+
