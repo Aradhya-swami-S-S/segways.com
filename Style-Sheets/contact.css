@@ -1,7 +1,7 @@
 
 
 .container-back{
-    background-color: #facea5;
+    background-color: white;
     margin-top: 4rem;
     height: 90vh;
 }
@@ -12,14 +12,14 @@
     left: 20rem;
     padding: 1rem 1rem;
     width: 45vw;
-    background-color: #eedcc3;
+    background-color: #efefef;
     font-family: 'Raleway', sans-serif;
     border-radius: 15px;
 }
 
 .form h1 {
     text-align: center;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid white
     
 }
 
@@ -65,7 +65,8 @@ form #message {
 form .submit{
     padding: 0.8rem 3rem;
     border: none;
-    background-color: #f5a356;
+    background-color: black;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 5px; 
+    color: #efefef;
 }
