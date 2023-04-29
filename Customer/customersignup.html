@@ -14,23 +14,30 @@
 
 
     <script>
-        function validateForm() {
-            var number = document.getElementById("phoneNum").value;
-            var otp = document.getElementById("otp").value;
-            var fullName = document.getElementById("fname").value;
+        // Get the form element
+const form = document.getElementById('myForm');
 
-            if (number == "" || otp == "") {
-                alert("Fill The Form");
-                return false;
-            }
-            else if (fullName == "") {
-                alert("Fill The Form");
-                return false;
-            }
-            else {
-                return true;
-            }
-        }
+// Add an event listener for form submission
+form.addEventListener('submit', (event) => {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Get the input values
+
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Perform validation
+  if (name.trim() === '' || email.trim() === '' || password.trim() === '') {
+    alert('Please fill in all the fields');
+  } else if (!email.includes('@')) {
+    alert('Please enter a valid email address');
+  } else {
+    // Redirect to another page
+    window.location.href = 'customerlogin.html';
+  }
+});
+
     </script>
 
 
@@ -77,14 +84,14 @@
         </div>
 
 
-        <form name="cust-signup">
-
-            <input type="number" name="pnum" id="phoneNum" placeholder="Enter you phone number" class="otp">
-            <button type="submit" class="otp_button">Get OTP</button>
-            <input type="number" name="" id="otp" placeholder="Enter OTP">
-            <input type="text" name="fname" id="fname" placeholder="Enter  your Full name">
-            <input type="email" name="email" id="email" placeholder="Enter your Email (Optional)">
-            <button type="submit" class="submit" onclick="return validateForm()">Sign up</button>
+        <form name="cust-signup" id="myForm" action="#" >
+            <input type="text" name="fname" id="name" placeholder="Enter  your Full name">
+            <input type="number" name="phonenumber" id="phonenumber" placeholder="Enter you phone number" class="otp">
+            
+            
+            <input type="email" name="email" id="email" placeholder="Enter your Email " required>
+            <input type="password" name="" id="password" placeholder="Enter password">
+            <input type="submit" class="submit" value="Submit">
 
         </form>
     </div>

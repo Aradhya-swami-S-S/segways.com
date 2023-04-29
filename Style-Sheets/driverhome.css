@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+.menu-back {
+    position: relative;
+    top: 1rem;
+}
+
+.menu-back .menu {
+    position: absolute;
+    top: 3.5rem;
+    left: 15rem;
+    padding: 1rem 0.5rem;
+    background-color: #efefef;
+    border-radius:  15px ;
+    font-family: 'Kanit', sans-serif;
+}
+
+.menu-back .menu .menu-list {
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+.menu-list li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 2rem;
+    
+}
+.menu-list li a i{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 0.3rem;
+}
+
+
+.menu-list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* .location {
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+    background-color: #efefef;
+    width: 95%;
+    padding: 2.5rem 0rem;
+    border-radius:  15px ;
+
+}
+
+.location h1 {
+    text-align: center;
+}
+
+.destination .inputs {
+    padding: 0rem 1.5rem;
+    margin-top: 0.7rem;
+}
+
+.destination .inputs input {
+    border: none;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+}
+
+
+.destination .inputs #from,
+#to {
+    width: 30%;
+    margin-top: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.destination .inputs #to {
+    margin-left: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+
+
+.destination .inputs #date {
+    margin-left: 0.5rem;
+    padding: 1.5rem 1rem;
+    width: 18%;
+
+}
+
+.destination .inputs #time {
+    margin-left: 0.5rem;
+    padding: 1.5rem 1rem;
+    width: 18%;
+}
+
+
+
+.destination .search {
+    
+    padding: 1rem;
+    width: 25%;
+    border: none;
+    color: white;
+    background-color: rgb(77, 76, 76);
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-left: 25rem;
+}
+
+ .map iframe {
+    position: absolute;
+    top: 3.7rem;
+    right: 2rem;
+    border-radius: 20px;
+}  */

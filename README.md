@@ -59,4 +59,5 @@ This is two wheeler taxi website
     border-box
 
  -- Vertical-align
-    middle
+    middle   
+    brand color #F1F6F9 , #EFEFEF,black , white

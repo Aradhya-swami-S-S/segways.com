@@ -11,7 +11,7 @@
     margin-right: auto;
     width: 500px;
     margin-top: 20px;
-    background-color: #e5e1dd;
+    background-color: #EFEFEF;
     border-radius: 20px;
     margin-top: 70px;
 }
@@ -64,7 +64,7 @@ input {
     margin-top: 10px;
     font-size: 20px;
      font-weight: bold;
-    background-color: #FDEEDC; 
+    background-color: white; 
   
 }
 
@@ -77,20 +77,15 @@ input {
     margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
-    background-color: #E38B29; 
-    
-
-}
-
-.back a {
+    background-color: white; 
     text-decoration: none;
-    color: white;
+     text-align: center;
+     color: black;
+
 }
 
-.submit a {
-    text-decoration: none;
-    color: #E38B29;
-}
+
+
 
 .name {
     width: 100%;
@@ -99,6 +94,15 @@ input {
     border-radius: 5px;
     border: 1px solid #c6c6c6;
 
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #c6c6c6;
+    font-size: 18px;
+    color: #7a7979 
 }
 
 input[type=password] {

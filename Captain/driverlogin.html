@@ -13,20 +13,33 @@
     <link rel="stylesheet" href="../Style-Sheets/style-main.css">
     <link rel="stylesheet" href="../Style-Sheets/driverlogin.css">
 
-    <script>
-        function emailValid(){
-            var email = document.driverLogin.email.value;
-            var pswd = document.driverLogin.pass.value;
+    <script> 
+    // Get the form element
+const form = document.getElementById('myForm');
 
-            if(email == "" || pswd == ""){
-                alert("Fill The Form");
-                return false;
-            }
-            else{
-                return true;
-            }
-      event.preventDefault();
-        }
+// Add an event listener for form submission
+form.addEventListener('submit', (event) => {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Get the input values
+  
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Perform validation
+  if (name.trim() === '' || email.trim() === '' || password.trim() === '') {
+    alert('Please fill in all the fields');
+  } else if (!email.includes('@')) {
+    alert('Please enter a valid email address');
+  } else {
+    // Redirect to another page
+    window.location.href = 'captain-home.html';
+  }
+});
+
+            
+        
     </script>
 </head>
 
@@ -67,15 +80,15 @@
         </div>
         <div class="form">
 
-            <form name="driverLogin">
+            <form name="driverLogin" action="#" id="myForm" >
 
-                <input type="email" name="email" id="email" placeholder="Email or Phone">
-                <input type="password" name="pass" id="password" placeholder="Password">
+                <input type="email" name="email" id="email" placeholder="Email or Phone" required>
+                <input type="password" name="pass" id="password" placeholder="Password" required>
 
                 <a href="" class="forgot">Forgot password?</a>
               
-                <a href="./captain-home.html" class="sign_in">
-                Sign in</a>
+                <input class="sign_in" id="btn" value="Sign in" type="submit">
+
 
                 
 
