@@ -1,0 +1,80 @@
+.setting {
+    position: absolute;
+    top: 10rem;
+    left: 19rem;
+    width: 50%;
+    padding: 1rem;
+    background-color: #efefef;
+    border-radius: 15px;
+}
+
+.setting h1 {
+    text-align: center;
+}
+
+.setting ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2rem;
+}
+.setting ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+
+.setting ul li a {
+    text-decoration: none;
+    color: rgb(226, 163, 44);
+    display: block;
+
+
+}
+
+.general-setting-ul li a i {
+    font-size: 25px;
+}
+
+#fav-hide{
+    display: none;
+    width: 60%;
+    position: absolute;
+    top: 9.5rem;
+    left: 8rem;
+    background-color: #efefef;
+    padding: 1rem;
+    border-radius:  15px;
+}
+#fav:hover #fav-hide{
+    display: block;
+}
+
+
+#abt:hover #about-list{
+    display: block;
+}
+
+#about-list { 
+    display: none;
+    position: absolute;
+    top: 8rem;
+    right: 10rem;
+    background-color: #efefef;
+    padding: 1rem;
+    border-radius:  15px;
+}
+
+#about-list ul {
+    list-style-type: none;
+}
+#about-list ul li{
+    margin: 1rem 0rem;
+    text-align: center;
+    display: block !important;
+}
+
+#about-list ul li a{
+    text-decoration: none;
+    color: black;
+}

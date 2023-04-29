@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer | Profile </title>
-    <link rel="stylesheet" href="../Style-Sheets/style-main.css">
-    <link rel="stylesheet" href="../Style-Sheets/customer-home.css">
-    <link rel="stylesheet" href="../Style-Sheets/customer-profile.css">
-
-    <!-- Google Fonts -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -20,9 +15,15 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Customer | Profile </title>
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </link>
 
+    <!-- Style-sheet -->
+    <link rel="stylesheet" href="../Style-Sheets/style-main.css">
+    <link rel="stylesheet" href="../Style-Sheets/customer-home.css">
+    <link rel="stylesheet" href="../Style-Sheets/customer-setting.css">
+
+    <title>Customer | Setting</title>
 </head>
 
 <body>
@@ -73,7 +74,7 @@
                     <a href=""> <i class="fa-solid fa-wallet"></i></a>
                     <a href="">Payments</a>
                 </li>
-                <li >
+                <li>
                     <a href=""><i class="fa-regular fa-star"></i></a>
                     <a href="">Rating & Feedback</a>
                 </li>
@@ -82,57 +83,55 @@
         </div>
     </div>
 
+    <div class="setting-container">
+        <div class="setting">
+            <h1>General | Settings</h1>
+            <ul class="general-setting-ul">
+                <li>
+                    <a href="./customer-profile.html"><i class="fa-regular fa-user"></i></a>
+                    <a href=""><b>Profile Setting</b></a>
+                </li>
 
-    <div class="profile">
-        <div class="image">
-            <img class="profile-image" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Image"
-                width="160px">
-        </div>
+                <li id="fav">
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><b>Favorites</b></a>
+                    <div id="fav-hide">
+                        You have not added any Favorite rides
+                    </div>
+                </li>
 
-        <div class="profile-info">
-            <form action="">
+                <li id="abt">
+                    <a href="" ><i class="fa-solid fa-circle-info"></i></a>
+                    <a href="" ><b>About</b></a>
+                    <div id="about-list">
+                        <ul>
+                            <li><a href="https://www.rapido.bike/Privacy">Terms & Conditions</a></li>
+                            <li><a href="https://www.rapido.bike/CustomerTerms">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </li>
 
-                <div class="fname">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" value="Mr.Segways">
-                </div>
-
-                <div class="lname">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" value=".com">
-                </div>
-
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" value="segwaysorg@gmail.com">
-                </div>
-                <div class="pnum">
-                    <label for="pnum">Mobile Number</label><br>
-                    <input type="tel" name="" id="pnum-input" value="1122334455">
-                </div>
-
-                <div class="gender">
-                    <label for="gender">Gender</label><br>
-                    <input type="text" name="gender" id="gender" value="Male">
-                </div>
-
-                <div class="dob">
-                    <label for="dob">Date of Birth</label>
-                    <p>12-12-2020</p>
-                </div>
-
-                <div class="member">
-                    <label for="text">Member Since</label>
-                    <p>2019</p>
-                </div>
-
-                <div class="emg-contact">
-                    <label for="text">Emergency Contact</label>
-                    <p >bla bla bla bla bla bla</p>
-                </div>
-            </form>
+                <li>
+                    <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+                    <a href="../index.html"><b>Logout</b></a>
+                </li>
+            </ul>
         </div>
     </div>
+
+
+    <!-- <script>
+        var hover = document.getElementById('abt');
+        var hiddenDiv = document.getElementById('about-list');
+
+        hover.addEventListener('mouseover', function handleMouseOverEvent() {
+            hiddenDiv.style.display = 'block';
+        });
+
+        hover.addEventListener('mouseout', function handleMouseOutEvent() {
+            hiddenDiv.style.display = 'none';
+        });
+    </script> -->
 </body>
 
 </html>

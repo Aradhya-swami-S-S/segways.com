@@ -1,0 +1,22 @@
+.my-ride {
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    padding: 0.5rem;
+    width: 61%;
+    background-color: #efefef;
+    border-radius: 15px;
+}
+.my-ride h1{
+    text-align: center;
+}
+
+.my-ride .my-ride-history{
+    margin-top: 1rem;
+    height: 100px;
+}
+.my-ride .my-ride-history h2{
+    display: inline;
+    margin-left: 1rem;
+    border-bottom:1px solid black ;
+}
