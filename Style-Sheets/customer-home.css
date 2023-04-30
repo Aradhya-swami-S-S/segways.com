@@ -7,6 +7,7 @@
 body {
     background-color: rgb(245, 245, 245);
 }
+
 .menu-back {
     position: relative;
     top: 1rem;
@@ -18,7 +19,7 @@ body {
     left: 15rem;
     padding: 1rem 0.5rem;
     background-color: #efefef;
-    border-radius:  15px ;
+    border-radius: 15px;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -31,9 +32,10 @@ body {
     display: inline-block;
     text-align: center;
     margin-left: 2rem;
-    
+
 }
-.menu-list li a i{
+
+.menu-list li a i {
     font-weight: bolder;
     font-size: 20px;
     margin-bottom: 0.3rem;
@@ -57,11 +59,12 @@ body {
     background-color: #efefef;
     width: 95%;
     padding: 2.5rem 0rem;
-    border-radius:  15px ;
+    border-radius: 15px;
+    font-family: 'Nunito', sans-serif;
     /* border: 1px black solid; */
 }
 
-.location h1 {
+.location .loc-head {
     text-align: center;
 }
 
@@ -117,9 +120,57 @@ body {
     margin-left: 25rem;
 }
 
-/* .map iframe {
+
+/* search cards */
+.search-results {
+    display: none;
+    position: relative;
+    left: 20rem;
+    padding: 1.5rem;
+    width: 70%;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+    margin-top: 2rem;
+
+}
+.search-card img{
+    border-radius: 10px;
+    background-color: #ededed;
+}
+.search-card h3{
     position: absolute;
-    top: 3.7rem;
-    right: 2rem;
-    border-radius: 20px;
-} */
+    top: 1.5rem;
+    left: 19rem;
+}
+
+.search-card .card-content{
+    float: right;
+    margin-top: 3rem;
+}
+.search-card .card-content h1{
+    text-align: center;
+}
+
+.search-card .card-content .btn{
+    padding: 1rem 2rem;
+    color: black;
+    border: none;
+    background-color: rgb(118,118,251);
+    margin-top: 0.3rem;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.search-card .about-card{
+    position: absolute;
+    bottom: 2rem;
+    left: 19rem;
+
+}
+.about-card table tr td{
+   padding: 0.3rem;
+}
+.about-card table tr td:nth-child(1){
+    color: rgb(118, 118, 251);
+}
