@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@250&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
 
     <!-- Style-sheet -->
     <link rel="stylesheet" href="../Style-Sheets/style-main.css">
@@ -46,61 +48,289 @@
         </nav>
     </div>
 
-  
-        <div class="menu-back">
-            <div class="menu">
-                <ul class="menu-list">
-                    <li>
-                        <a href="./customer-profile.html"> <i class="fa-regular fa-user"></i></a>
-                        <a href="./customer-profile.html">Profile</a>
-                    </li>
-                    <li>
-                        <a href="./my-rides.html"><i class="fa-solid fa-clock-rotate-left"></i></a>
-                        <a href="./my-rides.html">My Rides</a>
-                    </li>
-                    <li>
-                        <a href="./customer-notification.html"> <i class="fa-solid fa-bell"></i></a>
-                        <a href="./customer-notification.html">Notification</a>
-                    </li>
-                    <li>
-                        <a href="./customer-setting.html"><i class="fa-solid fa-wrench"></i></a>
-                        <a href="./customer-setting.html">Settings</a>
-                    </li>
-                    <li>
-                        <a href="./customer-support.html"><i class="fa-solid fa-headset"></i></a>
-                        <a href="./customer-support.html">Support</a>
-                    </li>
-                    <li>
-                        <a href="./customer-payments.html"> <i class="fa-solid fa-wallet"></i></a>
-                        <a href="./customer-payments.html">Payments</a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa-regular fa-star"></i></a>
-                        <a href="">Rating & Feedback</a>
-                    </li>
-                </ul>
-            </div>
 
-            <div class="location">
-                <h1>Book Your Cab Now!</h1>
-                <div class="destination">
-                    <form action="">
-                        <div class="inputs">
-                            <input type="text" id="from" placeholder="Pickup Location">
-                            <input type="text" id="to" placeholder="Dropoff Location">
-                            <input type="date" id="date">
-                            <input type="time" id="time" placeholder="Timing">
-                            <button class="search">SEARCH</button>
-                        </div>
-                    </form>
-                    <div class="search-results">
-                        <div class="search-card">
-                            
-                        </div>
+    <div class="menu-back">
+        <div class="menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="./customer-profile.html"> <i class="fa-regular fa-user"></i></a>
+                    <a href="./customer-profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="./my-rides.html"><i class="fa-solid fa-clock-rotate-left"></i></a>
+                    <a href="./my-rides.html">My Rides</a>
+                </li>
+                <li>
+                    <a href="./customer-notification.html"> <i class="fa-solid fa-bell"></i></a>
+                    <a href="./customer-notification.html">Notification</a>
+                </li>
+                <li>
+                    <a href="./customer-setting.html"><i class="fa-solid fa-wrench"></i></a>
+                    <a href="./customer-setting.html">Settings</a>
+                </li>
+                <li>
+                    <a href="./customer-support.html"><i class="fa-solid fa-headset"></i></a>
+                    <a href="./customer-support.html">Support</a>
+                </li>
+                <li>
+                    <a href="./customer-payments.html"> <i class="fa-solid fa-wallet"></i></a>
+                    <a href="./customer-payments.html">Payments</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-regular fa-star"></i></a>
+                    <a href="">Rating & Feedback</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="location">
+            <h1 class="loc-head">Book Your Cab Now!</h1>
+            <div class="destination">
+                <form action="">
+                    <div class="inputs">
+                        <input type="text" id="from" placeholder="Pickup Location">
+                        <input type="text" id="to" placeholder="Dropoff Location">
+                        <input type="date" id="date">
+                        <input type="time" id="time" placeholder="Timing">
+                        <button class="search">SEARCH</button>
                     </div>
+                </form>
+
+                <div class="search-results">
+
+                    <div class="search-card">
+                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
+                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
+                        <div class="card-content">
+                            <h1>&#8377 17/km</h1>
+                            <button class="btn">BOOK NOW</button>
+                        </div>
+                        <div class="about-card">
+                            <table>
+
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-location-pin"></i>
+                                        <span>Extra km fare</span>
+                                    </td>
+                                    <td>
+                                        <span>&#8377 15/km after 5kms</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                        <span>Fuel type</span>
+                                    </td>
+                                    <td>
+                                        <span>Petrol</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-ban"></i>
+                                        <span>Cancellation</span>
+                                    </td>
+                                    <td>
+                                        <span>Free till 1 hour departure</span>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="search-results">
+
+                    <div class="search-card">
+                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
+                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
+                        <div class="card-content">
+                            <h1>&#8377 17/km</h1>
+                            <button class="btn">BOOK NOW</button>
+                        </div>
+                        <div class="about-card">
+                            <table>
+
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-location-pin"></i>
+                                        <span>Extra km fare</span>
+                                    </td>
+                                    <td>
+                                        <span>&#8377 15/km after 5kms</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                        <span>Fuel type</span>
+                                    </td>
+                                    <td>
+                                        <span>Petrol</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-ban"></i>
+                                        <span>Cancellation</span>
+                                    </td>
+                                    <td>
+                                        <span>Free till 1 hour departure</span>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="search-results">
+
+                    <div class="search-card">
+                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
+                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
+                        <div class="card-content">
+                            <h1>&#8377 17/km</h1>
+                            <button class="btn">BOOK NOW</button>
+                        </div>
+                        <div class="about-card">
+                            <table>
+
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-location-pin"></i>
+                                        <span>Extra km fare</span>
+                                    </td>
+                                    <td>
+                                        <span>&#8377 15/km after 5kms</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                        <span>Fuel type</span>
+                                    </td>
+                                    <td>
+                                        <span>Petrol</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-ban"></i>
+                                        <span>Cancellation</span>
+                                    </td>
+                                    <td>
+                                        <span>Free till 1 hour departure</span>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="search-results">
+
+                    <div class="search-card">
+                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
+                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
+                        <div class="card-content">
+                            <h1>&#8377 17/km</h1>
+                            <button class="btn">BOOK NOW</button>
+                        </div>
+                        <div class="about-card">
+                            <table>
+
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-location-pin"></i>
+                                        <span>Extra km fare</span>
+                                    </td>
+                                    <td>
+                                        <span>&#8377 15/km after 5kms</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                        <span>Fuel type</span>
+                                    </td>
+                                    <td>
+                                        <span>Petrol</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-ban"></i>
+                                        <span>Cancellation</span>
+                                    </td>
+                                    <td>
+                                        <span>Free till 1 hour departure</span>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="search-results">
+
+                    <div class="search-card">
+                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
+                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
+                        <div class="card-content">
+                            <h1>&#8377 17/km</h1>
+                            <button class="btn">BOOK NOW</button>
+                        </div>
+                        <div class="about-card">
+                            <table>
+
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-location-pin"></i>
+                                        <span>Extra km fare</span>
+                                    </td>
+                                    <td>
+                                        <span>&#8377 15/km after 5kms</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                        <span>Fuel type</span>
+                                    </td>
+                                    <td>
+                                        <span>Petrol</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-ban"></i>
+                                        <span>Cancellation</span>
+                                    </td>
+                                    <td>
+                                        <span>Free till 1 hour departure</span>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
