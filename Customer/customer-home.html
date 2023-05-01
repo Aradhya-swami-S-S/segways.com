@@ -83,6 +83,8 @@
             </ul>
         </div>
 
+
+
         <div class="location">
             <h1 class="loc-head">Book Your Cab Now!</h1>
             <div class="destination">
@@ -92,245 +94,294 @@
                         <input type="text" id="to" placeholder="Dropoff Location">
                         <input type="date" id="date">
                         <input type="time" id="time" placeholder="Timing">
-                        <button class="search">SEARCH</button>
+                        <button class="search" id="mybtn">SEARCH</button>
                     </div>
                 </form>
 
-                <div class="search-results">
+                <div id="bike-results-div" class="hidden">
 
-                    <div class="search-card">
-                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
-                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
-                        <div class="card-content">
-                            <h1>&#8377 17/km</h1>
-                            <button class="btn">BOOK NOW</button>
+                    <div class="selection">
+                        <div class="gender-select">
+                            <label for="gender">Select Captian's Gender</label><br>
+                            <hr>
+                            <input type='radio' name="gender" id="male" />Male <br>
+                            <input type='radio' name="gender" id="female" /> Female
                         </div>
-                        <div class="about-card">
-                            <table>
+                        <div class="vehicle-type">
+                            <label for="vehicle">Select Vehicle Type</label><br>
+                            <hr>
+                            <input type='radio' name="vehicle" id="scooter" />Scooter <br>
+                            <input type='radio' name="vehicle" id="bike" />Bike
+                        </div>
+                    </div>
 
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-location-pin"></i>
-                                        <span>Extra km fare</span>
-                                    </td>
-                                    <td>
-                                        <span>&#8377 15/km after 5kms</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-gas-pump"></i>
-                                        <span>Fuel type</span>
-                                    </td>
-                                    <td>
-                                        <span>Petrol</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-ban"></i>
-                                        <span>Cancellation</span>
-                                    </td>
-                                    <td>
-                                        <span>Free till 1 hour departure</span>
-                                    </td>
-                                </tr>
+                    <div class="search-results">
 
-                            </table>
+                        <div class="search-card">
+                            <img src="../images/scooty-img.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3><br>
+                                <h4>Nikita p.</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
+
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
                         </div>
 
                     </div>
 
-                </div>
+                    <div class="search-results-2">
 
-                <div class="search-results">
+                        <div class="search-card">
+                            <img src="../images/pulsor-img.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>Bajaj, Pulsor<i>or similar to </i><b>4.1/</b>5</h3><br>
+                                <h4>Prashant K.</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
 
-                    <div class="search-card">
-                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
-                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
-                        <div class="card-content">
-                            <h1>&#8377 17/km</h1>
-                            <button class="btn">BOOK NOW</button>
-                        </div>
-                        <div class="about-card">
-                            <table>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
 
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-location-pin"></i>
-                                        <span>Extra km fare</span>
-                                    </td>
-                                    <td>
-                                        <span>&#8377 15/km after 5kms</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-gas-pump"></i>
-                                        <span>Fuel type</span>
-                                    </td>
-                                    <td>
-                                        <span>Petrol</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-ban"></i>
-                                        <span>Cancellation</span>
-                                    </td>
-                                    <td>
-                                        <span>Free till 1 hour departure</span>
-                                    </td>
-                                </tr>
+                                </table>
+                            </div>
 
-                            </table>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="search-results">
-
-                    <div class="search-card">
-                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
-                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
-                        <div class="card-content">
-                            <h1>&#8377 17/km</h1>
-                            <button class="btn">BOOK NOW</button>
-                        </div>
-                        <div class="about-card">
-                            <table>
-
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-location-pin"></i>
-                                        <span>Extra km fare</span>
-                                    </td>
-                                    <td>
-                                        <span>&#8377 15/km after 5kms</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-gas-pump"></i>
-                                        <span>Fuel type</span>
-                                    </td>
-                                    <td>
-                                        <span>Petrol</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-ban"></i>
-                                        <span>Cancellation</span>
-                                    </td>
-                                    <td>
-                                        <span>Free till 1 hour departure</span>
-                                    </td>
-                                </tr>
-
-                            </table>
                         </div>
 
                     </div>
 
-                </div>
-                <div class="search-results">
+                    <div class="search-results-3">
 
-                    <div class="search-card">
-                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
-                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
-                        <div class="card-content">
-                            <h1>&#8377 17/km</h1>
-                            <button class="btn">BOOK NOW</button>
-                        </div>
-                        <div class="about-card">
-                            <table>
+                        <div class="search-card">
+                            <img src="../images/dio-scooter.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>Honda, Dio<i>or similar to </i><b>4.0/</b>5</h3><br>
+                                <h4>Spandana K M.</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
 
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-location-pin"></i>
-                                        <span>Extra km fare</span>
-                                    </td>
-                                    <td>
-                                        <span>&#8377 15/km after 5kms</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-gas-pump"></i>
-                                        <span>Fuel type</span>
-                                    </td>
-                                    <td>
-                                        <span>Petrol</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-ban"></i>
-                                        <span>Cancellation</span>
-                                    </td>
-                                    <td>
-                                        <span>Free till 1 hour departure</span>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
 
-                            </table>
-                        </div>
+                                </table>
+                            </div>
 
-                    </div>
-
-                </div>
-                <div class="search-results">
-
-                    <div class="search-card">
-                        <img src="../images/scooty-img.png" alt="scooter" width="250px">
-                        <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3>
-                        <div class="card-content">
-                            <h1>&#8377 17/km</h1>
-                            <button class="btn">BOOK NOW</button>
-                        </div>
-                        <div class="about-card">
-                            <table>
-
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-location-pin"></i>
-                                        <span>Extra km fare</span>
-                                    </td>
-                                    <td>
-                                        <span>&#8377 15/km after 5kms</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-gas-pump"></i>
-                                        <span>Fuel type</span>
-                                    </td>
-                                    <td>
-                                        <span>Petrol</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa-solid fa-ban"></i>
-                                        <span>Cancellation</span>
-                                    </td>
-                                    <td>
-                                        <span>Free till 1 hour departure</span>
-                                    </td>
-                                </tr>
-
-                            </table>
                         </div>
 
                     </div>
+                    <div class="search-results-4">
 
+                        <div class="search-card">
+                            <img src="../images/passion-pro-img.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>Hero, Passion Pro <i>or similar to </i><b>4.4/</b>5</h3><br>
+                                <h4>Ajay R.</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
+
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="search-results-5">
+
+                        <div class="search-card">
+                            <img src="../images/maestro-scooter.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>HERO, Maestro <i>or similar to </i><b>4.5/</b>5</h3><br>
+                                <h4>Vandita R</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
+
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        // Get a reference to the search button and the div to display
+        const searchButton = document.getElementById("mybtn");
+        const displayDiv = document.getElementById("bike-results-div");
+
+        // Add an event listener to the search button to listen for clicks
+        searchButton.addEventListener("click", (event) => {
+            // Prevent the default behavior of the click event
+            event.preventDefault();
+
+            displayDiv.classList.remove("hidden");
+
+        });
+
+    </script>
 </body>
 
 </html>
