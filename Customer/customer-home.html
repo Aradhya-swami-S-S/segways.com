@@ -93,7 +93,7 @@
                         <input type="text" id="from" placeholder="Pickup Location">
                         <input type="text" id="to" placeholder="Dropoff Location">
                         <input type="date" id="date">
-                        <input type="time" id="time" placeholder="Timing">
+                        <input type="time" id="time">
                         <button class="search" id="mybtn">SEARCH</button>
                     </div>
                 </form>
@@ -369,7 +369,15 @@
     </div>
 
     <script>
+        // Validate the location form and Display the results
+
         // Get a reference to the search button and the div to display
+        const address = [
+            document.getElementById("from"),
+            document.getElementById("to"),
+            document.getElementById("date"),
+            document.getElementById("time")
+        ];
         const searchButton = document.getElementById("mybtn");
         const displayDiv = document.getElementById("bike-results-div");
 
@@ -380,10 +388,23 @@
             // Prevent the default behavior of the click event
             event.preventDefault();
 
-            displayDiv.classList.remove("hidden");
-
+            // Check if all address fields have a value
+            let allFieldsFilled = true;
+            for (let i = 0; i < address.length; i++) {
+                if (!address[i].value) {
+                    allFieldsFilled = false;
+                    break;
+                }
+            }
+            if (allFieldsFilled) {
+                displayDiv.classList.remove("hidden");
+            } else {
+                alert("Please fill in all address fields.");
+            }
         });
 
+
+        // Selecting Bike-taxi Using radio button based on captain's gender
 
         const radioFemale = document.getElementById("female");
         const radioMale = document.getElementById("male");
