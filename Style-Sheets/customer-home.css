@@ -120,24 +120,48 @@ body {
     margin-left: 25rem;
 }
 
+/* Gender selection */
+.selection{
+    position: absolute;
+    top: 15.5rem;
+    left: 1rem;
+    padding: 1rem;
+    width: 25%;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+}
+.selection .gender-select{
+    padding: 0.5rem;
+}
+.selection  input{
+    margin:1rem 1rem 0rem;
+}
+.selection .vehicle-type{
+    margin-top: 1rem;
+}
 
-/* search cards */
-.search-results {
+
+
+.hidden{
     display: none;
+}
+/* search cards */
+.search-results,.search-results-2,.search-results-3,.search-results-4,.search-results-5 {
+   
     position: relative;
     left: 20rem;
     padding: 1.5rem;
     width: 70%;
     border-radius: 15px;
     background-color: #e6e6e6;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
 }
 .search-card img{
     border-radius: 10px;
     background-color: #ededed;
 }
-.search-card h3{
+.search-card .about-bike-name{
     position: absolute;
     top: 1.5rem;
     left: 19rem;
