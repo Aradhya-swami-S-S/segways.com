@@ -125,6 +125,8 @@ const phone = document.getElementById("phone");
 const phoneVal = phone.value;
     
       const passwordVal  = password.value;  
+      var atposition =  emailVal.indexOf("@");  
+var dotposition=emailVal.lastIndexOf("."); 
       // sending error message  
     
       if(nameVal === ""){
@@ -137,7 +139,10 @@ const phoneVal = phone.value;
       else if(emailVal === ""){
           alert("email can't be blank"); 
     
-      }  else if(phoneVal === ""){
+      }  
+      else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=emailVal.length){
+    alert("Enter valid Email")
+  }    else if(phoneVal === ""){
         alert("enter phone number")
       }  else if  (phoneVal.length !=  10) {
            alert("enter correct phone number")

@@ -85,11 +85,16 @@ const password = document.getElementById("password");
   })   
   const validate = () =>{
   const emailVal  = email.value;
-   const passwordVal  = password.value;  
+   const passwordVal  = password.value;   
+   var atposition =  emailVal.indexOf("@");  
+var dotposition=emailVal.lastIndexOf("."); 
    if(emailVal === ""){
       alert("email can't be blank"); 
 
-  } else if(passwordVal === ""){
+  }  else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=emailVal.length){
+    alert("Enter valid Email")
+  }  
+   else if(passwordVal === ""){
     alert("password can't be blank");
   } else if(passwordVal.length <= 5){
       alert(" password min 6 characters")

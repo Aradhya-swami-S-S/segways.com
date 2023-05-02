@@ -745,9 +745,11 @@
   const nameVal  = name.value;
   const emailVal  = email.value;
   const dlVal  = dl.value;
-  const selectVal = select.value;
+  const selectVal = select.value; 
 
-  const passwordVal  = password.value;  
+  const passwordVal  = password.value;
+  var atposition =  emailVal.indexOf("@");  
+var dotposition=emailVal.lastIndexOf(".");   
   // sending error message  
 
   if(nameVal === ""){
@@ -760,7 +762,9 @@
   else if(emailVal === ""){
       alert("email can't be blank"); 
 
-  }    
+  }   else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=emailVal.length){
+    alert("Enter valid Email")
+  }  
   else if(selectVal === "select"){
       alert("select a city");
 
@@ -780,7 +784,8 @@
   }
   }   
 
-  
+
+
   
   
   
