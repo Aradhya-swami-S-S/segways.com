@@ -8,7 +8,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="../Style-Sheets/style-main.css">
     <link rel="stylesheet" href="../Style-Sheets/driverhome.css">
-    
+      <style>  
+      body{
+        background-color: #efefef;
+      }
+        #support-container{
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    padding: 2rem;
+    width: 95%;
+    background-color: #efefef;
+    border-radius: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#support{
+    padding: 1rem;
+}
+
+#support ul{
+    list-style-type: none;
+}
+#support ul li h3{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+#support ul li h2 i{
+    margin-right: 0.5rem;
+}
+#support ul li p {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+#support ol li{
+    margin-left: 2rem;
+    text-align: justify;
+    margin: 1rem 0 0.5rem 2rem;
+}
+      </style>
 </head>
 <body>
     <div class="navbar-container">
@@ -69,8 +109,43 @@
                 <a href="./captainearnings.html" class="block">Total Earnings</a>
             </li>
             
-        </ul>
+        </ul>  
+        <hr>
     </div>  
-    <h1>Support</h1>
+    <div id="support-container">
+        <div id="support">
+            <ul class="support-list">
+                <li>
+                    <div class="safety-faq">
+                        <h2><i class="fa-solid fa-shield"></i>Safety & Security</h2>
+                        <h3>Q: What measures should segways take to ensure the safety and security of its users?</h3>
+                        <p>A: Segways should take several measures to ensure the safety and security of its users,
+                            including:</p>
+                        <ol>
+                            <li>
+                                <b>User verification:</b> The app should verify the identity of its users by requiring
+                                them to provide their phone number, email, and government-issued ID.
+                            </li>
+                            <li>
+                                <b>Driver screening:</b> The app should conduct thorough background checks on its drivers to
+                                ensure that they have a clean criminal record and are qualified to operate a motorcycle.
+                            </li>
+                            <li>
+                                <b>In-app chat/call:</b> The app should have a built-in chat/call feature that allows users to
+                                communicate with their driver without revealing their personal phone number.
+                            </li>
+                            <li>
+                                <b>Emergency button:</b> The app should have an emergency button that users can use to call for
+                                help in case of an emergency.
+                            </li>
+                            <li>
+                                <b>Insurance:</b> The app should provide insurance coverage for both the rider and the driver.
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

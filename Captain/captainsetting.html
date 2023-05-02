@@ -8,6 +8,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="../Style-Sheets/style-main.css">
     <link rel="stylesheet" href="../Style-Sheets/driverhome.css">
+
+    <style>  
+    body{
+        background-color: #efefef;
+    }
+    .setting {
+    position: absolute;
+    top: 10rem;
+    left: 19rem;
+    width: 50%;
+    padding: 1rem;
+    background-color: #efefef;
+    border-radius: 15px;
+}
+
+.setting h1 {
+    text-align: center;
+}
+
+.setting ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2rem;
+}
+.setting ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+
+.setting ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+
+
+}
+
+.general-setting-ul li a i {
+    font-size: 25px;
+}
+
+#fav-hide{
+    display: none;
+    width: 60%;
+    position: absolute;
+    top: 9.5rem;
+    left: 8rem;
+    background-color: #efefef;
+    padding: 1rem;
+    border-radius:  15px;
+}
+#fav:hover #fav-hide{
+    display: block;
+}
+
+
+#abt:hover #about-list{
+    display: block;
+}
+
+#about-list { 
+    display: none;
+    position: absolute;
+    top: 8rem;
+    right: 10rem;
+    background-color: #efefef;
+    padding: 1rem;
+    border-radius:  15px;
+}
+
+#about-list ul {
+    list-style-type: none;
+}
+#about-list ul li{
+    margin: 1rem 0rem;
+    text-align: center;
+    display: block !important;
+}
+
+#about-list ul li a{
+    text-decoration: none;
+    color: black;
+}
+    </style>
 </head>
 <body>
     <div class="navbar-container">
@@ -68,8 +154,43 @@
                 <a href="./captainearnings.html" class="block">Total Earnings</a>
             </li>
             
-        </ul>
+        </ul> 
+        <hr>
     </div> 
-    <h1>Settings</h1>
+    <div class="setting-container">
+        <div class="setting">
+            <h1>General | Settings</h1>
+            <ul class="general-setting-ul">
+                <li>
+                    <a href="./customer-profile.html"><i class="fa-regular fa-user"></i></a>
+                    <a href=""><b>Profile Setting</b></a>
+                </li>
+
+                <li id="fav">
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><b>Favorites</b></a>
+                    <div id="fav-hide">
+                        You have not added any Favorite rides
+                    </div>
+                </li>
+
+                <li id="abt">
+                    <a href="" ><i class="fa-solid fa-circle-info"></i></a>
+                    <a href="" ><b>About</b></a>
+                    <div id="about-list">
+                        <ul>
+                            <li><a href="https://www.rapido.bike/Privacy">Terms & Conditions</a></li>
+                            <li><a href="https://www.rapido.bike/CustomerTerms">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+                    <a href="../index.html"><b>Logout</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

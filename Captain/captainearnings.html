@@ -7,7 +7,15 @@
     <title>Document</title>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="../Style-Sheets/style-main.css">
-    <link rel="stylesheet" href="../Style-Sheets/driverhome.css">
+    <link rel="stylesheet" href="../Style-Sheets/driverhome.css">  
+    <style>
+        body{
+            background-color: #efefef;
+        }    
+        .earnings{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar-container">
@@ -68,8 +76,14 @@
                 <a href="./captainearnings.html" class="block">Total Earnings</a>
             </li>
             
-        </ul>
+        </ul>  
+        <hr>
     </div>  
-    <h1>Earnings</h1>
+    <div class="earnings">
+        <h1 >Total Earnings</h1>  
+        <p>Your total earnings is</p>
+        <p id="earned" style="font-weight: bolder; font-size: 30px;">1000</p>
+    </div>
+   
 </body>
 </html>

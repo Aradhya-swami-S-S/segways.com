@@ -13,64 +13,7 @@
   <link rel="stylesheet" href="../Style-Sheets/style-main.css">
   <link rel="stylesheet" href="../Style-Sheets/driversingup.css">
 
-  <script>
   
-  // Get the form element
-// const form = document.getElementById('myForm');
-
-// // Add an event listener for form submission
-// form.addEventListener('submit', (event) => {
-//   // Prevent the default form submission behavior
-//   event.preventDefault();
-
-//   // Get the input values
-//   const name = document.getElementById('name').value;
-//   const email = document.getElementById('email').value;
-//   const password = document.getElementById('password').value;
-
-//   // Perform validation
-//   if (name.trim() === '' || email.trim() === '' || password.trim() === '') {
-//     alert('Please fill in all the fields');
-//   } else if (!email.includes('@')) {
-//     alert('Please enter a valid email address');
-//   } else {
-//     // Redirect to another page
-//     window.location.href = "driverlogin.html";
-//   }
-// });
-
-
-
-
-    // example license number
-
-// GJ-2420180   else if(document.driverSignup.city.value == "select"){
-        // alert("Please Select City");
-        // return false;
-// RAH12071998 
-// MH27 30123476102
-// 12HR-37200602347 
-// UP14 20160034761 
-// UP14 20160034761 
-// HR-0619850034761
-
-
-    //   Driving License
-//     It should be 16 characters long (including space or hyphen (-)).
-// The driving license number can be entered in any of the following formats:
-// HR-0619850034761
-//  OR 
-// HR06 19850034761
-// The first two characters should be upper-case alphabets that represent the state code.
-// The next two characters should be digits that represent the RTO code.
-// The next four characters should be digits that represent the license issued in a year.
-// The next seven characters should be any digits from 0-9.
-
-   
-      
-    
-
-  </script>
 </head>
 
 <body>
@@ -106,11 +49,13 @@
 
   <div class="main">
 
-    <form name="driverSignup" id="myForm"   >
+    <form  id="myForm"   >
       <!-- <i class="fa-solid fa-circle-xmark"></i> -->
       <h1>Become a Captain</h1>
       <div class="input">
-        <input type="text" name="fname" id="fname" placeholder="Enter your Full Name" class="name">
+        
+          <input type="text" name="fname" id="name" placeholder="Enter your Full Name" class="name">
+        
         <select name="city" id="select" class="select">
           <option value="select" selected disabled>Select your City</option>
           <option value="Adilabad">Adilabad</option>
@@ -752,13 +697,13 @@
           <option value="Zunheboto">Zunheboto</option>
         </select>
 
-        <input type="text" name="DL" id="dl" placeholder="Enter your DL  number" required>
+        <input type="text" name="" id="dl" placeholder="Enter your DL  number" required>
         <input type="email" name="email" id="email" placeholder="Enter your Email" class="email" required>
-        <input type="password" name="pswd" id="password" placeholder="Enter your Password" class="inline-block password" required>
+        <input type="password" name="" id="password" placeholder="Enter your Password" class="inline-block password" required>
         
 
         <div class="checkbox">
-          <input type="checkbox" name="" id="" class="inline-block-1"  required>
+          <input type="checkbox" name="" id="checkbox" class="inline-block-1"  required>
           <p class="inline-block-1 font_size">I agree to Segway's<a href="#" class="underline">Terms and Condition</a>
           </p>
         </div>
@@ -767,7 +712,7 @@
       
 
       <a href="/index.html" class="back"  target="_self">Cancel</a> 
-      <a href="./driverlogin.html"><input type="submit" class="submit" value="Submit"></a>
+      <input type="submit" class="submit" value="Submit">
 
       
 
@@ -777,7 +722,99 @@
     <p>Already on segways ?<a href="./driverlogin.html">Login</a></p>
   </div>
 
+  <script>
+  
+    // Get the form element
+  const form = document.getElementById("myForm");
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const dl = document.getElementById("dl");
+  const select = document.getElementById("select");
 
+  const password = document.getElementById("password");
+  form.addEventListener("submit",(event) =>{
+    event.preventDefault();
+    validate();
+  })    
+  //  more email validation
+  const isEmail = (emailVal) =>{
+    var atSymbol
+     = emailVal.indexOf("@")
+     ;
+     if(atSymbol < 1) return false ;
+     var dot = emailVal.lastIndexOf(".");
+     if(dot <= atSymbol + 2); return false;
+     if ( dot === emailVal.length -1)  return false;
+     return true;
+
+  }
+  //  define validate function
+  const validate = () =>{
+    const formVal = form.value.trim();
+  const nameVal  = name.value.trim();
+  const emailVal  = email.value.trim();
+  const dlVal  = dl.value.trim();
+  const selectVal = select.value.trim();
+
+  const passwordVal  = password.value.trim();  
+  // sending error message  
+
+  if(nameVal === ""){
+      alert("name can't be blank");
+  } else if (nameVal.length <= 2){
+    alert("name min 3 charaters")
+  } else{
+
+  }     
+  if(emailVal === ""){
+      alert("name can't be blank");
+  } else if (!isEmail(emailVal)){
+    alert("not a valid number")
+  } else{
+
+  }   
+  if(selectVal === "select"){
+      alert("select a city");
+  } else{
+
+  }   
+  }   
+
+  
+  
+  
+  
+  
+  
+      // example license number
+  
+  // GJ-2420180   else if(document.driverSignup.city.value == "select"){
+          // alert("Please Select City");
+          // return false;
+  // RAH12071998 
+  // MH27 30123476102
+  // 12HR-37200602347 
+  // UP14 20160034761 
+  // UP14 20160034761 
+  // HR-0619850034761
+  
+  
+      //   Driving License
+  //     It should be 16 characters long (including space or hyphen (-)).
+  // The driving license number can be entered in any of the following formats:
+  // HR-0619850034761
+  //  OR 
+  // HR06 19850034761
+  // The first two characters should be upper-case alphabets that represent the state code.
+  // The next two characters should be digits that represent the RTO code.
+  // The next four characters should be digits that represent the license issued in a year.
+  // The next seven characters should be any digits from 0-9.
+  
+     
+        
+      
+  
+    </script>
 </body>
 
 </html>
