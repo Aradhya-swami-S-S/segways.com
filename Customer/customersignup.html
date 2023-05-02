@@ -86,12 +86,12 @@
 
         <form name="cust-signup" id="myForm" >
             <input type="text" name="fname" id="name" placeholder="Enter  your Full name">
-            <input type="number" name="phonenumber" id="phonenumber" placeholder="Enter you phone number" class="otp">
+            <input type="number" name="phonenumber" id="phone" placeholder="Enter you phone number" class="otp">
             
             
             <input type="email" name="email" id="email" placeholder="Enter your Email " required>
             <input type="password" name="" id="password" placeholder="Enter password">
-            <a href="./customerlogin.html"><input type="submit" class="submit" value="Submit"></a>
+            <input type="submit" class="submit" value="Submit">
 
         </form>
     </div>
@@ -102,7 +102,69 @@
     </div>
 
 
-
+    <script>
+  
+        // Get the form element
+      const form = document.getElementById("myForm");
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+    
+      const password = document.getElementById("password");  
+      form.addEventListener("submit",(event) =>{
+        event.preventDefault();
+        validate();    
+        
+      })    
+      
+      //  define validate function
+      const validate = () =>{
+        const formVal = form.value;
+      const nameVal  = name.value;
+      const emailVal  = email.value;
+const phoneVal = phone.value;
+    
+      const passwordVal  = password.value;  
+      // sending error message  
+    
+      if(nameVal === ""){
+          alert("name can't be blank");
+    
+      } else if (nameVal.length <= 2){
+        alert("name min 3 charaters") 
+    
+      } 
+      else if(emailVal === ""){
+          alert("email can't be blank"); 
+    
+      }  else if(phoneVal === ""){
+        alert("enter phone number")
+      }  else if  (phoneVal.length !=  10) {
+           alert("enter correct phone number")
+      }
+       else if(passwordVal === ""){
+        alert("password can't be blank");
+      } else if(passwordVal.length <= 5){
+          alert(" password min 6 characters")
+      } 
+      else{
+        window.location.assign("customerlogin.html")
+      }
+      }   
+    
+      
+      
+      
+      
+      
+      
+         
+      
+         
+            
+          
+      
+        </script>
 
 
 </body>

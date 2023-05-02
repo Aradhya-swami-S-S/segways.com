@@ -697,9 +697,9 @@
           <option value="Zunheboto">Zunheboto</option>
         </select>
 
-        <input type="text" name="" id="dl" placeholder="Enter your DL  number" required>
-        <input type="email" name="email" id="email" placeholder="Enter your Email" class="email" required>
-        <input type="password" name="" id="password" placeholder="Enter your Password" class="inline-block password" required>
+        <input type="text" name="" id="dl" placeholder="Enter your DL  number" >
+        <input type="email" name="email" id="email" placeholder="Enter your Email" class="email" >
+        <input type="password" name="" id="password" placeholder="Enter your Password" class="inline-block password" >
         
 
         <div class="checkbox">
@@ -731,53 +731,53 @@
   const dl = document.getElementById("dl");
   const select = document.getElementById("select");
 
-  const password = document.getElementById("password");
+  const password = document.getElementById("password");  
+  let regex = new RegExp(/^(([A-Z]{2}[0-9]{2})( )|([A-Z]{2}-[0-9]{2}))((19|20)[0-9][0-9])[0-9]{7}$/);
   form.addEventListener("submit",(event) =>{
     event.preventDefault();
-    validate();
+    validate();    
+    
   })    
-  //  more email validation
-  const isEmail = (emailVal) =>{
-    var atSymbol
-     = emailVal.indexOf("@")
-     ;
-     if(atSymbol < 1) return false ;
-     var dot = emailVal.lastIndexOf(".");
-     if(dot <= atSymbol + 2); return false;
-     if ( dot === emailVal.length -1)  return false;
-     return true;
-
-  }
+  
   //  define validate function
   const validate = () =>{
-    const formVal = form.value.trim();
-  const nameVal  = name.value.trim();
-  const emailVal  = email.value.trim();
-  const dlVal  = dl.value.trim();
-  const selectVal = select.value.trim();
+    const formVal = form.value;
+  const nameVal  = name.value;
+  const emailVal  = email.value;
+  const dlVal  = dl.value;
+  const selectVal = select.value;
 
-  const passwordVal  = password.value.trim();  
+  const passwordVal  = password.value;  
   // sending error message  
 
   if(nameVal === ""){
       alert("name can't be blank");
+
   } else if (nameVal.length <= 2){
-    alert("name min 3 charaters")
-  } else{
+    alert("name min 3 charaters") 
 
-  }     
-  if(emailVal === ""){
-      alert("name can't be blank");
-  } else if (!isEmail(emailVal)){
-    alert("not a valid number")
-  } else{
+  } 
+  else if(emailVal === ""){
+      alert("email can't be blank"); 
 
-  }   
-  if(selectVal === "select"){
+  }    
+  else if(selectVal === "select"){
       alert("select a city");
-  } else{
 
-  }   
+  } 
+  else if(dlVal === ""){
+      alert("dl number can't be blank");
+  } else if (regex.test(dlVal) === false ){
+    alert("Enter correct dl number")
+
+  } else if(passwordVal === ""){
+    alert("password can't be blank");
+  } else if(passwordVal.length <= 5){
+      alert(" password min 6 characters")
+  } 
+  else{
+    window.location.assign("driverlogin.html")
+  }
   }   
 
   

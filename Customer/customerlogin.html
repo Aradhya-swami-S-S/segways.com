@@ -85,8 +85,8 @@
             <form  name="custLogin" id="myForm"  >
                 <input type="email" name="email" id="email" value="" placeholder="Enter your Email" required>
                 <input type="password" name="pass" id="password" placeholder="Enter password" required>  
-                <a href="#" class="forgot">Forgot password?</>
-            <a href="./customer-home.html"><input type="submit" id="btn" class="btn" value="Log in" onclick="event.preventDefault()"></a> 
+                
+            <input type="submit" id="btn" class="btn" value="Log in" > 
             </form>
             
         </div>
@@ -96,6 +96,34 @@
     <div class="down_content">
         <p>New to Segways? <a href="./customersignup.html"> Join now</a></p>
     </div>
+    <script>   
+        const form = document.getElementById("myForm");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password"); 
+    
+        form.addEventListener("submit",(event) =>{
+        event.preventDefault();
+        validate();    
+        
+      })   
+      const validate = () =>{
+      const emailVal  = email.value;
+       const passwordVal  = password.value;  
+       if(emailVal === ""){
+          alert("email can't be blank"); 
+    
+      } else if(passwordVal === ""){
+        alert("password can't be blank");
+      } else if(passwordVal.length <= 5){
+          alert(" password min 6 characters")
+      } 
+      else{
+        window.location.assign("customer-home.html")
+      }   
+    }
+                
+            
+        </script>
 </body>
 
 </html>
