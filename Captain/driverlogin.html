@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../Style-Sheets/style-main.css">
     <link rel="stylesheet" href="../Style-Sheets/driverlogin.css">
 
-   
+
 </head>
 
 <body>
@@ -53,19 +53,14 @@
         </div>
         <div class="form">
 
-            <form name="driverLogin"  id="myForm" >
+            <form name="driverLogin" id="myForm">
 
                 <input type="email" name="email" id="email" placeholder="Email " required>
                 <input type="password" name="pass" id="password" placeholder="Password" required>
 
                 <a href="" class="forgot">Forgot password?</a>
-              
-<input class="sign_in" id="btn" value="Sign in" type="submit">
 
-
-                
-
-                
+                <input class="sign_in" id="btn" value="Sign in" type="submit">
             </form>
 
         </div>
@@ -73,38 +68,38 @@
     <div class="down_content">
         <p>New to Segways? <a href="./driversingup.html"> Join now</a></p>
     </div>
-    <script>   
-    const form = document.getElementById("myForm");
-const email = document.getElementById("email");
-const password = document.getElementById("password"); 
+    <script>
+        const form = document.getElementById("myForm");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
 
-    form.addEventListener("submit",(event) =>{
-    event.preventDefault();
-    validate();    
-    
-  })   
-  const validate = () =>{
-  const emailVal  = email.value;
-   const passwordVal  = password.value;   
-   var atposition =  emailVal.indexOf("@");  
-var dotposition=emailVal.lastIndexOf("."); 
-   if(emailVal === ""){
-      alert("email can't be blank"); 
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            validate();
 
-  }  else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=emailVal.length){
-    alert("Enter valid Email")
-  }  
-   else if(passwordVal === ""){
-    alert("password can't be blank");
-  } else if(passwordVal.length <= 5){
-      alert(" password min 6 characters")
-  } 
-  else{
-    window.location.assign("captain-home.html")
-  }   
-}
-            
-        
+        })
+        const validate = () => {
+            const emailVal = email.value;
+            const passwordVal = password.value;
+            var atposition = emailVal.indexOf("@");
+            var dotposition = emailVal.lastIndexOf(".");
+            if (emailVal === "") {
+                alert("email can't be blank");
+
+            } else if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= emailVal.length) {
+                alert("Enter valid Email")
+            }
+            else if (passwordVal === "") {
+                alert("password can't be blank");
+            } else if (passwordVal.length <= 5) {
+                alert(" password min 6 characters")
+            }
+            else {
+                window.location.assign("captain-home.html")
+            }
+        }
+
+
     </script>
 </body>
 

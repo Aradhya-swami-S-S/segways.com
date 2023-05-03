@@ -65,13 +65,40 @@
                 <label for="message" class="message">Message</label><br>
                 <textarea id="message" name="Message" rows="6" cols="50"></textarea><br>
 
-                <button class="submit">SUBMIT</button>
+                <button class="submit" id="submit">SUBMIT</button>
 
             </form>
         </div>
 
     </div>
+    <script>
+        const fields = [
+            document.getElementById("fname"),
+            document.getElementById("lname"),
+            document.getElementById("email"),
+            document.getElementById("message")
+        ];
 
+        const myBtn = document.getElementById("submit");
+
+        myBtn.addEventListener("click",(event)=>{
+            event.preventDefault();
+
+            let allFieldsFilled = true;
+            for(let i=0; i < fields.length; i++){
+                if(!fields[i].value){
+                    allFieldsFilled = false;
+                    break;
+                }
+            }
+            if(allFieldsFilled){
+                alert("Message Sent 👍");
+            }
+            else{
+                alert("Please Fill in all fields");
+            }
+        });
+    </script>
 
 </body>
 
