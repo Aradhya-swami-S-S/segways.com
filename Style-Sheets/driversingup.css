@@ -50,39 +50,16 @@ label {
 }
 
 input {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 18px;
+    background-color: white;
+border: none; 
+border-radius: 2px;
 
 }
 
-.submit {
-    display: inline-block;
-    width: 49%;
-    padding: 10px 5px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
-    margin-top: 10px;
-    font-size: 20px;
-     font-weight: bold;
-    background-color: white; 
-  
-}
 
-.back {
-    display: inline-block;
-    width: 49%;
-    padding: 10px 5px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: white; 
-    text-decoration: none;
-     text-align: center;
-     color: black;
 
-}
 
 
 
@@ -91,16 +68,14 @@ input {
     width: 100%;
     padding: 10px 5px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
+    border: none;
 
 }
 input[type=text]{
     width: 100%;
     padding: 10px 5px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
+
     font-size: 18px;
     color: #7a7979 
 }
@@ -109,18 +84,16 @@ input[type=password] {
     width: 100%;
     padding: 10px 5px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
     font-size: 18px;
-    color: #7a7979
+    color: #7a7979;
+    border: none;
 }
 
 .input .select {
     width: 100%;
     padding: 10px 5px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
+    border:none;
     font-size: 18px;
     color: #7a7979;
 }
@@ -129,61 +102,10 @@ input[type=password] {
     width: 100%;
     padding: 10px 5px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
+    border: none;
 }
 
-.input .radio .license_text {
-    font-size: 20px;
-    letter-spacing: 1px;
-}
 
-.input .radio .radio_fields {
-    margin-top: 10px;
-    padding: 5px 0px;
-    margin-bottom: 10px;
-}
-
-.input .radio .label_of_radio {
-    font-size: 20px;
-    line-height: 10px;
-}
-
-.half_width {
-    width: 50%;
-    padding: 10px 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
-
-}
-
-.radio-input {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.number {
-    width: 75%;
-    padding: 10px 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
-    margin-right: 10px;
-
-}
-
-.otp {
-    width: 20%;
-    padding: 10px 0px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #c6c6c6;
-    font-size: 18px; 
-    background-color: #E38B29;
-    color: white;
-    font-weight: bold;
-}
 
 .underline {
     color: #7a7979;
@@ -211,7 +133,19 @@ input[type=password] {
 .login_link a {
     display: inline-block;
     margin-left: 5px;
-}   
+}     
+.submit {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+     font-weight: bold;
+    background-color: white; 
+  
+}
 
 @media (max-width:540px){
 

@@ -27,10 +27,15 @@
             padding: 10px;
 
         }
-
+  .image {
+    background-color: #efefef;
+  }
         .image img {
-            border: 10px solid white;
-            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+border-radius: 50%;
+border: 5px solid   white;
+            
         }
 
         .profile-info {
@@ -38,7 +43,7 @@
         }
 
         label {
-            font-size: 20px;
+            font-size: 18px;
             letter-spacing: 1px;
             line-height: 25px;
 
@@ -83,7 +88,24 @@
             cursor: pointer;
             margin: auto;
             margin-top: 20px;
-            font-weight: bolder;
+             font-weight: bolder;
+        }   
+        .file{
+            width: 250px;
+        }  
+        .file_label{
+             display: block;
+  padding: 5px 5px;
+             margin: auto;
+             cursor: pointer;
+     font-size: 20px;
+             text-align: center;
+background-color: white;
+             border-radius: 50px;
+
+        }  
+        input[type=file]{
+            display: none;
         }
     </style>
 
@@ -152,8 +174,9 @@
     </div>
     <div class="profile">
         <div class="image">
-            <img class="profile-image" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Image"
-                width="160px">
+            <img src="../images/defaultprofileimagedekhna-removebg-preview.png" alt="Add Photo" id="photo">  
+            <label for="file" class="file_label">Update Photo</label>
+            <input type="file" name="" id="file" accept="image/jpeg,image/png image/jpg" class="file">
         </div>
 
         <div class="profile-info">
@@ -208,7 +231,15 @@
             </form>
         </div>
     </div>
+  
 
+    <script>
+        let photo  = document.getElementById("photo");
+        let file = document.getElementById("file"); 
+        file.onchange = function (){
+            photo.src = URL.createObjectURL(file.files[0]);
+        }
+    </script>
 </body>
 
 </html>
