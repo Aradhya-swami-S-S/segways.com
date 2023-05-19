@@ -50,7 +50,7 @@
 
 
 
-    <div class="signup" ">
+    <div class="signup">
 
         <div class="heading">
             <h1>Create your segways Account</h1>
@@ -59,10 +59,15 @@
 
 
         <form name="cust-signup" id="myForm" >
-            <input type="text" name="fname" id="name" placeholder="Enter  your Full name">
-            <input type="number" name="phonenumber" id="phone" placeholder="Enter you phone number" class="otp">
-            
-            
+            <input type="text" name="fname" id="fname" placeholder="Enter  your First name">
+            <input type="text" name="lname" id="lname" placeholder="Enter  your last name">
+            <input type="number" name="phonenumber" id="phone" placeholder="Enter you phone number">
+
+            <label for="gender" id="gender-label">Select Your Gender</label>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+            <input type="radio" name="gender" id="other">Other
+
             <input type="email" name="email" id="email" placeholder="Enter your Email " required>
             <input type="password" name="" id="password" placeholder="Enter password">
             <input type="password" name="" id="cpassword" placeholder="Confirm password">

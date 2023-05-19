@@ -41,6 +41,18 @@ input {
    letter-spacing: 1px;
 }
 
+#gender-label{
+   margin-right: 1.5rem;
+   margin-left: 0.8rem;
+   font-size: 20px;
+}
+#male,#female,#other{
+   display: inline-block;
+   width: 5%;
+   padding: 0;
+}
+
+
 .submit {
    width: 100%;
    padding: 15px 0px;
