@@ -198,3 +198,83 @@ body {
 .about-card table tr td:nth-child(1){
     color: rgb(118, 118, 251);
 }
+
+
+#book-modal {
+    /* display: none; Hidden by default  */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 3rem; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* 10l width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0);/* Fallback color*/
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
+  
+
+  }
+
+  .book-modal-content {
+    background-color: rgb(233, 233, 233);
+    margin: auto;
+    padding: 1.25rem;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 5px;
+  }
+
+  .close-x-btn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close-x-btn:hover,
+  .close-x-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.book-modal-content .driver-details{
+    padding: 0.5rem;
+    margin-top: 3.5rem;
+    border-radius: 10px;
+    border: 1px solid #888;
+}
+
+.book-modal-content .inclusions-left{
+    padding: 1rem;
+    margin-top:1rem ;
+    border-radius: 10px;
+    border: 1px solid #888;
+}
+.book-modal-content .inclusions-left ul{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+.book-modal-content .exclusions-right{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid #888;
+}
+
+.book-modal-content .exclusions-right ul{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
