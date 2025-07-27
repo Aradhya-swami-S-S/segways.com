@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segways-Captain-login</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/driverlogin.css" type="text/css" />
+
+
+</head>
+
+<body> 
+
+    <div th:replace="driversingup::navbar1"> </div>
+
+       
+
+    <div class="login">
+        <div class="heading">
+            <h1>Sign in</h1>
+            <p> Driver login
+            </p>
+        </div>
+        <div class="form">
+
+            <form name="driverLogin" id="myForm" action="/logindriver" method="post">
+
+                <input type="email" name="email" id="email" placeholder="Email " >
+                <input type="password" name="password" id="password" placeholder="Password" >
+
+                <a href="" class="forgot">Forgot password?</a>
+
+                <input class="sign_in" id="btn" value="Sign in" type="submit">
+            </form>
+
+        </div>
+    </div>
+    <div class="down_content">
+        <p>New to Segways? <a href="driversingup"> Join now</a></p>
+    </div>
+    
+<!--      <script>
+   //     const form = document.getElementById("myForm");
+     //   const email = document.getElementById("email");
+    //    const password = document.getElementById("password");
+
+ //       form.addEventListener("submit", () => {
+//
+           // validate(event);
+
+  //      })
+    //    const validate = (event) => {
+      //      const emailVal = email.value;
+      //      const passwordVal = password.value;
+       //     var atposition = emailVal.indexOf("@");
+       //     var dotposition = emailVal.lastIndexOf(".");
+     //       if (emailVal === "") { 
+    //        	event.preventDefault();
+      //          alert("email can't be blank");
+
+       //     } else if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= emailVal.length) { 
+        //    	 event.preventDefault();
+         //       alert("Enter valid Email");
+          //  }
+       //     else if (passwordVal === "") { 
+      //      	event.preventDefault();
+     //           alert("password can't be blank");
+     //       } else if (passwordVal.length <= 5) { 
+      //      	event.preventDefault();
+       //         alert(" password min 6 characters");
+        //    }
+     //       else {
+      //        //  window.location.assign("captain-home"); 
+       //       alert("logged in successfully")
+       //     }
+       // };
+
+
+  //  </script> -->
+</body>
+
+</html>

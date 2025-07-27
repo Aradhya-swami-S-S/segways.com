@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/driverhome.css">
+    <style>
+        body {
+            background-color: #efefef;
+        }
+
+        .profile {
+            display: flex;
+            padding: 20px;
+
+
+        }
+
+        .image,
+        .profile-info {
+            background-color: #efefef;
+            padding: 10px;
+
+        }
+  .image {
+    background-color: #efefef;
+  }
+        .image img {
+            width: 180px;
+            height: 180px;
+border-radius: 50%;
+border: 5px solid   white;
+            
+        }
+
+        .profile-info {
+            padding-left: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 25px;
+
+            ;
+
+        }
+
+        input {
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            width: 300px;
+            display: block;
+        }
+
+        .data {
+            margin-bottom: 5px;
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        .edit {
+            border: 2px solid white;
+            font-size: 20px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin: auto;
+            margin-top: 20px;
+             font-weight: bolder;
+        }   
+        .file{
+            width: 250px;
+        }  
+        .file_label{
+             display: block;
+  padding: 5px 5px;
+             margin: auto;
+             cursor: pointer;
+     font-size: 20px;
+             text-align: center;
+background-color: white;
+             border-radius: 50px;
+
+        }  
+        input[type=file]{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar-container">
+
+        <nav class="navbar" style="top: 0;">
+            <div class="nav-logo">
+                <img src="../images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" width="48px">
+                <h3>segways</h3>
+            </div>
+
+            <div class="nav-items">
+                <ul class="nav">
+                    <li class="item-1"><a href="./captain-home">Home</a> </li>
+                    <li class="item"><a href="../index.html">About Us</a></li>
+                    <li class="item"><a href="../index.html">Safety</a></li>
+                    <li class="item"><a href="contact">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </div>
+    <div class="menu" style="position: sticky;">
+        <ul class="menu-list">
+            <li>
+                <a href="./captainprofile" class="block
+                "> <i class="fa-regular fa-user"></i></a>
+                <a href="./captainprofile" class="block
+                ">Profile</a>
+            </li>
+            <li>
+                <a href="./captainorders" class="block
+                "><i class="fa-solid fa-clock-rotate-left"></i></a>
+                <a href="./captainorders" class="block
+                ">Orders</a>
+            </li>
+            <li>
+                <a href="./captainnotification" class="block
+                "> <i class="fa-solid fa-bell"></i></a>
+                <a href="./captainnotification" class="block
+                ">Notification</a>
+            </li>
+            <li>
+                <a href="./captainsetting" class="block
+                "><i class="fa-solid fa-wrench"></i></a>
+                <a href="./captainsetting" class="block
+                ">Settings</a>
+            </li>
+            <li>
+                <a href="./captainsupport" class="block
+                "><i class="fa-solid fa-headset"></i></a>
+                <a href="./captainsupport" class="block
+                ">Support</a>
+            </li>
+            <li>
+                <a href="./captainearnings" class="block"> <i class="fa-solid fa-wallet"></i></a>
+                <a href="./captainearnings" class="block">Total Earnings</a>
+            </li>
+
+        </ul>
+        <hr>
+    </div>
+    <div class="profile">
+<!--        <div class="image">
+            <img src="../images/defaultprofileimagedekhna-removebg-preview.png" alt="Add Photo" id="photo">  
+            <label for="file" class="file_label">Update Photo</label>
+            <input type="file" name="" id="file" accept="image/jpeg,image/png image/jpg" class="file">
+        </div>-->
+
+        <div class="profile-info">
+            <form action="/updatedProfile" method="post">
+                <div class="flex">
+                    <div class="fname data">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" value="${driver.name}" name="name">
+                    </div>   
+                     <div class="password data">
+                        <label for="password">password</label>
+                        <input type="text" id="password" value="[[${driver.password}]]" name="password">
+                    </div> 
+                    
+
+                    
+
+                    <div class="email data">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" value="[[${email}]]">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="pnum data">
+                        <label for="pnum">Mobile Number</label>
+                        <input type="tel" name="phoneNum" id="pnum" value="[[${phoneNum}]]">
+                    </div>
+                    <div class="dl data">
+                        <label for="dl">DL No</label>
+                        <input type="text" name="dl" id="dl" value="[[${dl}]]">
+                    </div>
+                    <div class="gender data">
+                        <label for="gender">Gender</label>
+                        <input type="text" name="gender" id="gender" value="[[${gender}]]">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="city data">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" value="[[${city}]]">
+                    </div>
+
+                   
+
+                   
+                </div>
+                <input type="submit" value="Update" class="edit">
+            </form>
+        </div>  
+
+    </div>
+  
+
+<!--    <script>
+        let photo  = document.getElementById("photo");
+        let file = document.getElementById("file"); 
+        file.onchange = function (){
+            photo.src = URL.createObjectURL(file.files[0]);
+        }
+    </script>-->
+</body>
+
+</html>

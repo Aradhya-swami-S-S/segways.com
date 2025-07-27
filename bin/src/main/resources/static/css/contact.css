@@ -1,0 +1,72 @@
+
+
+.container-back{
+    background-color: white;
+    margin-top: 4rem;
+    height: 90vh;
+}
+
+.form {
+    position: relative;
+    top: 1rem;
+    left: 20rem;
+    padding: 1rem 1rem;
+    width: 45vw;
+    background-color: #efefef;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 15px;
+}
+
+.form h1 {
+    text-align: center;
+    border-bottom: 2px solid white
+    
+}
+
+form {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+
+
+form input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form #fname,
+#lname {
+    width: 18vw;
+}
+
+form #lname{
+    margin-left: 0.7rem;
+}
+
+form #email {
+    width: 100%;
+}
+
+form #message {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+form .submit{
+    padding: 0.8rem 3rem;
+    border: none;
+    background-color: black;
+    font-size: 16px;
+    border-radius: 5px; 
+    color: #efefef;
+}

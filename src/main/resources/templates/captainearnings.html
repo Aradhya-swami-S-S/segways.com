@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/driverhome.css">  
+    <style>
+        body{
+            background-color: #efefef;
+        }    
+        .earnings{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="/captain-home::navbar3"> </div>
+    <div class="menu">
+        <ul class="menu-list">
+            <li>
+                <a href="./captainprofile"  class="block
+                "> <i class="fa-regular fa-user"></i></a>
+                <a href="./captainprofile" class="block
+                ">Profile</a>
+            </li>
+            <li>
+                <a href="./captainorders" class="block
+                "><i class="fa-solid fa-clock-rotate-left"></i></a>
+                <a href="./captainorders" class="block
+                ">Orders</a>
+            </li>
+            <li>
+                <a href="./captainnotification" class="block
+                "> <i class="fa-solid fa-bell"></i></a>
+                <a href="./captainnotification" class="block
+                ">Notification</a>
+            </li>
+            <li>
+                <a href="./captainsetting" class="block
+                "><i class="fa-solid fa-wrench"></i></a>
+                <a href="./captainsetting" class="block
+                ">Settings</a>
+            </li>
+            <li>
+                <a href="./captainsupport" class="block
+                "><i class="fa-solid fa-headset"></i></a>
+                <a href="./captainsupport" class="block
+                ">Support</a>
+            </li>
+            <li>
+                <a href="./captainearnings"  class="block"> <i class="fa-solid fa-wallet"></i></a>
+                <a href="./captainearnings" class="block">Total Earnings</a>
+            </li>
+            
+        </ul>  
+        <hr>
+    </div>  
+    <div class="earnings">
+        <h1 >Total Earnings</h1>  
+        <p>Your total earnings is</p>
+        <p id="earned" style="font-weight: bolder; font-size: 30px;">1000</p>
+    </div>
+   
+</body>
+</html>

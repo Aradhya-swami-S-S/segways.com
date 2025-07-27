@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@250&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+   
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- Style-sheet -->
+   <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/customer-home.css">
+
+
+    <title>Customer-Home</title>
+
+</head>
+
+<body>
+    <div class="navbar-container">
+
+        <nav class="navbar" style="top: 0;">
+            <div class="nav-logo">
+                <img src="../images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" style="width:48px;">
+                <h3>segways</h3>
+            </div>
+
+            <div class="nav-items">
+                <ul class="nav">
+                    <li class="item-1"><a href="./customer-home">Home</a> </li>
+                    <li class="item"><a href="../index.html">About Us</a></li>
+                    <li class="item"><a href="../index.html">Safety</a></li>
+                    <li class="item"><a href="contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="menu-back">
+        <div class="menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="./customer-profile"> <i class="fa-regular fa-user"></i></a>
+                    <a href="./customer-profile">Profile</a>
+                </li>
+                <li>
+                    <a href="./my-rides"><i class="fa-solid fa-clock-rotate-left"></i></a>
+                    <a href="./my-rides">My Rides</a>
+                </li>
+                <li>
+                    <a href="./customer-notification"> <i class="fa-solid fa-bell"></i></a>
+                    <a href="./customer-notification">Notification</a>
+                </li>
+                <li>
+                    <a href="./customer-setting"><i class="fa-solid fa-wrench"></i></a>
+                    <a href="./customer-setting">Settings</a>
+                </li>
+                <li>
+                    <a href="./customer-support"><i class="fa-solid fa-headset"></i></a>
+                    <a href="./customer-support">Support</a>
+                </li>
+                <li>
+                    <a href="./customer-payments"> <i class="fa-solid fa-wallet"></i></a>
+                    <a href="./customer-payments">Payments</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-regular fa-star"></i></a>
+                    <a href="">Rating & Feedback</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="location">
+            <h1 class="loc-head">Book Your Cab Now!</h1>
+            <div class="destination">
+                <form action="">
+                    <div class="inputs">
+                        <input type="text" id="from" placeholder="Pickup Location">
+                        <input type="text" id="to" placeholder="Dropoff Location">
+                        <input type="date" id="date">
+                        <input type="time" id="time">
+                        <button class="search" id="mybtn">SEARCH</button>
+                    </div>
+                </form>
+
+                <div id="bike-results-div" class="hidden">
+
+                    <div class="selection">
+                        <div class="gender-select">
+                            <label for="gender">Select Captian's Gender</label><br>
+                            <hr>
+                            <input type='radio' name="gender" id="male" />Male <br>
+                            <input type='radio' name="gender" id="female" />Female <br>
+                            <input type="radio" name="gender" id="all">All
+                        </div>
+                        <div class="vehicle-type">
+                            <label for="vehicle">Select Vehicle Type</label><br>
+                            <hr>
+                            <input type='radio' name="vehicle" id="scooter" />Scooter <br>
+                            <input type='radio' name="vehicle" id="bike" />Bike
+                        </div>
+                    </div>
+
+                    <div class="search-results">
+
+                        <div class="search-card">
+                            <img src="../images/scooty-img.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>TVS, Jupiter <i>or similar to </i><b>4.3/</b>5</h3><br>
+                                <h4>Nikita p.</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
+
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="search-results-2">
+
+                        <div class="search-card">
+                            <img src="../images/pulsor-img.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>Bajaj, Pulsor<i> or similar to </i><b>4.1/</b>5</h3><br>
+                                <h4>Prashant K.</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
+
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="search-results-3">
+
+                        <div class="search-card">
+                            <img src="../images/dio-scooter.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>Honda, Dio<i>or similar to </i><b>4.0/</b>5</h3><br>
+                                <h4>Spandana K M.</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
+
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="search-results-4">
+
+                        <div class="search-card">
+                            <img src="../images/passion-pro-img.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>Hero, Passion Pro <i>or similar to </i><b>4.4/</b>5</h3><br>
+                                <h4>Ajay R.</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
+
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="search-results-5">
+
+                        <div class="search-card">
+                            <img src="../images/maestro-scooter.png" alt="scooter" width="250px">
+                            <div class="about-bike-name">
+                                <h3>HERO, Maestro <i>or similar to </i><b>4.5/</b>5</h3><br>
+                                <h4>Vandita R</h4>
+                            </div>
+                            <div class="card-content">
+                                <h1>&#8377 17/km</h1>
+                                <button class="btn">BOOK NOW</button>
+                            </div>
+                            <div class="about-card">
+                                <table>
+
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-location-pin"></i>
+                                            <span>Extra km fare</span>
+                                        </td>
+                                        <td>
+                                            <span>&#8377 15/km after 5kms</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span>Fuel type</span>
+                                        </td>
+                                        <td>
+                                            <span>Petrol</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Cancellation</span>
+                                        </td>
+                                        <td>
+                                            <span>Free till 1 hour departure</span>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Validate the location form and Display the results
+
+        // Get a reference to the search button and the div to display
+        const address = [
+            document.getElementById("from"),
+            document.getElementById("to"),
+            document.getElementById("date"),
+            document.getElementById("time")
+        ];
+        const searchButton = document.getElementById("mybtn");
+        const displayDiv = document.getElementById("bike-results-div");
+
+        // Add an event listener to the search button to listen for clicks
+        searchButton.addEventListener("click", (event) => {
+
+
+            // Prevent the default behavior of the click event
+            event.preventDefault();
+
+            // Check if all address fields have a value
+            let allFieldsFilled = true;
+            for (let i = 0; i < address.length; i++) {
+                if (!address[i].value) {
+                    allFieldsFilled = false;
+                    break;
+                }
+            }
+            if (allFieldsFilled) {
+                displayDiv.classList.remove("hidden");
+            } else {
+                alert("Please fill in all address fields.");
+            }
+        });
+
+
+        // Selecting Bike-taxi Using radio button based on captain's gender
+
+        const radioFemale = document.getElementById("female");
+        const radioMale = document.getElementById("male");
+        const radioAll = document.getElementById("all");
+        const femaleDivs = [
+            ...document.getElementsByClassName("search-results"),
+            ...document.getElementsByClassName("search-results-3"),
+            ...document.getElementsByClassName("search-results-5")
+        ];
+        const maleDivs = [
+            ...document.getElementsByClassName("search-results-2"),
+            ...document.getElementsByClassName("search-results-4"),
+        ];
+
+        radioFemale.addEventListener("click", () => {
+            femaleDivs.forEach((div) => {
+                if (div) { // Check if the div exists before setting its display property
+                    div.style.display = "block";
+                }
+            });
+
+            maleDivs.forEach((div) => {
+                if (div) { // Check if the div exists before setting its display property
+                    div.style.display = "none";
+                }
+            });
+        });
+
+        radioMale.addEventListener("click", () => {
+            maleDivs.forEach((div) => {
+                if (div) { // Check if the div exists before setting its display property
+                    div.style.display = "block";
+                }
+            });
+
+            femaleDivs.forEach((div) => {
+                if (div) { // Check if the div exists before setting its display property
+                    div.style.display = "none";
+                }
+            });
+        });
+
+        radioAll.addEventListener("click", () => {
+            maleDivs.forEach((div) => {
+                if (div) { // Check if the div exists before setting its display property
+                    div.style.display = "block";
+                }
+            });
+
+            femaleDivs.forEach((div) => {
+                if (div) { // Check if the div exists before setting its display property
+                    div.style.display = "block";
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

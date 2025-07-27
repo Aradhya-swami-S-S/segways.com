@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@250&display=swap" rel="stylesheet">
+
+    <!-- Font Awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+
+    <!-- Style Sheets -->
+     <!-- Style-sheet -->
+   <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/customer-home.css">
+    <link rel="stylesheet" href="/css/customer-payments.css">
+    <title>Customer | Payments</title>
+</head>
+
+<body>
+    <div th:replace="customer-home::navbar2"> </div>
+
+    <div class="menu-back">
+        <div class="menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="./customer-profile"> <i class="fa-regular fa-user"></i></a>
+                    <a href="./customer-profile">Profile</a>
+                </li>
+                <li>
+                    <a href="./my-rides"><i class="fa-solid fa-clock-rotate-left"></i></a>
+                    <a href="./my-rides">My Rides</a>
+                </li>
+                <li>
+                    <a href="./customer-notification"> <i class="fa-solid fa-bell"></i></a>
+                    <a href="./customer-notification">Notification</a>
+                </li>
+                <li>
+                    <a href="./customer-setting"><i class="fa-solid fa-wrench"></i></a>
+                    <a href="./customer-setting">Settings</a>
+                </li>
+                <li>
+                    <a href="./customer-support"><i class="fa-solid fa-headset"></i></a>
+                    <a href="./customer-support">Support</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa-solid fa-wallet"></i></a>
+                    <a href="#">Payments</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-regular fa-star"></i></a>
+                    <a href="">Rating & Feedback</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="payment-container">
+
+        <div id="online-payments">
+            <h2> Online Payments <p>(corrently unavailable)</p></h2>
+            <div class="google-pay">
+                <img src="https://i.pinimg.com/originals/f6/60/a6/f660a637c5ea8ef2b00218bac3479c82.png" alt="Gpay" width="50px">
+                <h3>Google Pay</h3>
+                <a href="">Link<i class="fa-sharp fa-solid fa-link"></i></a>
+            </div>
+            <div class="phone-pay">
+                <img src="../images/phonPay-logo.png" alt="phonePay" width="50px">
+                <h3>PhonePay</h3>
+                <a href="">Link<i class="fa-sharp fa-solid fa-link"></i></a>
+            </div>
+            <div class="paytm">
+                <img src="../images/paytm-logo.png" alt="paytm" width="50px">
+                <h3>Paytm</h3>
+                <a href="">Link<i class="fa-sharp fa-solid fa-link"></i></a>
+            </div>
+            <div class="amazon-pay">
+                <img src="../images/amazon-pay.png" alt="amazon Pay" width="50px">
+                <h3>Amazon Pay</h3>
+                <a href="">Link<i class="fa-sharp fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="offline-payment">
+        <h2>Offline Payment</h2>
+        <div class="cash">
+            <img src="../images/rupee-cash-logo.png" alt="cash" width="50px">
+            <h3>Cash</h3>
+        </div>
+    </div>
+</body>
+
+</html>

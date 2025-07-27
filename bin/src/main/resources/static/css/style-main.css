@@ -1,0 +1,597 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.preload{
+  background:#fff url(../images/preloader.gif) no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+}
+
+.container{
+  display: none;
+}
+
+
+.navbar-container .navbar {
+  position: fixed;
+  z-index: 2;
+  padding: 0.2rem 3rem;
+  width: 100%;
+  background-color: #ffffffd9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .nav-logo img,
+h3 {
+  vertical-align: middle;
+}
+
+.navbar .nav-logo h3 {
+  display: inline;
+}
+
+.navbar-container .navbar .nav-items {
+  position: absolute;
+  top: 1rem;
+  right: 10rem;
+}
+
+.navbar .nav-items ul li {
+  margin-left: 1.5rem;
+  list-style-type: none;
+  display: inline-block;
+
+}
+
+.navbar .nav-items ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.dropdown {
+  position: absolute;
+  top: 0.4rem;
+  right: 3.5rem;
+  background-color: rgba(233, 233, 233, 0.722);
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.dropdown a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown .drop-items {
+  display: none;
+}
+
+.dropdown .drop-items a {
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+}
+
+.dropdown:hover .drop-items {
+  display: block;
+}   
+.icon{
+    
+    position: absolute;
+    top:1rem; 
+    right: 25px;
+}
+
+#home {
+  /* margin-top: 3.4rem; */
+  background: url(../images/mohnish-landge-TwZFaDuGyeA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+#home .content .heading {
+  position: relative;
+  top: 12rem;
+  text-align: center;
+  color: white;
+  letter-spacing: 8px;
+}
+
+#home .content .heading h1 {
+  font-size: 4rem;
+  font-family: 'Stylish', sans-serif;
+
+}
+
+#home .content .heading p {
+  font-family: 'Stylish', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+}
+
+#home .content .buttons {
+  position: relative;
+  top: 14rem;
+  text-align: center;
+}
+
+#home .content .buttons button {
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#home .content .buttons button a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* ABOUT SECTION */
+#about {
+  position: relative;
+  padding: 3rem 2rem;
+  background-color: #FDEEDC;
+}
+
+#about .para {
+  padding: 3rem 4rem 3rem 4rem;
+  margin-left: 5rem;
+  background-color: black;
+  color: rgb(223, 223, 223);
+  width: 50%;
+  font-family: 'Epilogue', sans-serif;
+  word-spacing: 0.2em;
+  line-height: 25px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#about .para:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#about .para h3 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+#about .para p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+#about .image-about {
+  position: absolute;
+  top: 5.5rem;
+  right: 9rem;
+  width: 35%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.image-about:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* Safety Content Style Sheet */
+#safety {
+  position: relative;
+  height: 85vh;
+  background-color: #ffd3aa;
+}
+
+#safety  img {
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
+  z-index: 1;
+  width: 35%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#safety img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#safety  .safety-content {
+  position: absolute;
+  top: 2rem;
+  right: 9.6rem;
+  width: 45vw;
+  background-color: #000000;
+  color: rgb(223, 223, 223);
+  padding: 2rem;
+  font-family: 'Epilogue', sans-serif;
+  line-height: 25px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.safety-content:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.safety-content .safety-for-all h3 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.safety-content .safety-for-all p {
+  text-align: justify;
+}
+
+.safety-content hr {
+  margin: 0.5rem 0rem;
+  border: none;
+  border-top: 1px dashed rgb(255, 255, 255);
+}
+
+.safety-content .cust-safety {
+  float: left;
+  width: 16vw;
+  text-align: justify;
+}
+
+.safety-content .cap-safety {
+  float: right;
+  width: 16vw;
+  text-align: justify;
+
+}
+
+/* Why segways content (Style) */
+.why-segways {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+ .segways-content {
+  position: relative;
+  padding: 0 0.5rem;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+.segways-content .customer h1 {
+  text-align: center;
+}
+
+.segways-content .customer h2 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+/* cards */
+.cust-card {
+  position: relative;
+  margin-top: 1rem;
+  height: 50vh;
+}
+
+.cust-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cust-card p {
+  line-height: 25px;
+}
+
+
+/* doorstep-card */
+.cust-card .doorstep {
+  margin-left: 1rem;
+  text-align: center;
+  width: 25vw;
+}
+
+
+/* affordable-card */
+.cust-card .affordable {
+  position: absolute;
+  top: 0;
+  left: 28rem;
+  text-align: center;
+  width: 25vw;
+}
+
+/* quick-ride */
+.cust-card .quick-ride {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  text-align: center;
+  width: 25vw;
+}
+
+
+
+/* Captain-card */
+.cap-card {
+  position: relative;
+  height: 70vh;
+}
+
+.cap-card h2 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.cap-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cap-card p {
+  line-height: 25px;
+}
+
+/*  Zero-pressure*/
+.cap-card .zero-pressure {
+  margin-left: 1rem;
+  text-align: center;
+  width: 25vw;
+}
+
+/* Earning */
+.cap-card .earning {
+  position: absolute;
+  top: 4.6rem;
+  left: 28rem;
+  text-align: center;
+  width: 25vw;
+}
+
+/* insured */
+.cap-card .insured {
+  position: absolute;
+  top: 4.6rem;
+  right: 1rem;
+  text-align: center;
+  width: 25vw;
+}
+
+
+
+/* Footer */
+.footer {
+  position: relative;
+  padding: 2rem;
+  background-color: #E9F8F9;
+  height: 50vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer li {
+  list-style-type: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer .left {
+  position: absolute;
+  top: 2rem;
+  left: 3.6rem;
+  width: 25vw;
+}
+
+.footer .left ul li {
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.footer .right {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  width: 25vw;
+  text-align: right;
+}
+
+.footer .right ul li {
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+
+
+.footer .last {
+  position: absolute;
+  width: 92%;
+  left: 3rem;
+  bottom: 5rem;
+  color: black;
+
+}
+
+
+.last .copy {
+  float: left;
+  margin-top: 1rem;
+}
+.last .social-media{
+  float: right;
+}
+
+
+.last li {
+  margin-top: 1rem;
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+
+
+/* For Tablet ( about ) */
+@media (max-width: 800px) {
+  #about {
+    position: relative;
+    padding: 2.5rem 1rem 0rem 1rem;
+    background-color: #FDEEDC;
+  }
+
+  #about .para {
+    padding: 2rem 2rem 3.5rem 2rem;
+    margin-left: 2rem;
+    background-color: rgba(255, 255, 255, 0.276);
+    color: rgb(0, 0, 0);
+    width: 90%;
+    line-height: 25px;
+    border-radius: 0px 50px 0px 50px;
+  }
+
+  #about .para h3 {
+    font-size: 1.5rem;
+  }
+
+  #about .para p {
+    font-size: 1rem;
+  }
+
+  #about .image-about {
+    position: relative;
+    top: -2.5rem;
+    left: 6.5rem;
+    width: 70%;
+    border-radius: 50px;
+  }
+
+}
+
+/* For Tablet  ( SAFETY ) */
+@media (max-width: 800px){
+  #safety{
+    position: relative;
+    height: 140vh;
+  }
+  #safety img{
+    position: absolute;
+    top: 22.5rem;
+    left: 7.5rem;
+    width: 68%;
+    border-radius: 50px;
+  }
+  #safety .safety-content{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    width: 90vw;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.276);
+    color: rgb(0, 0, 0);
+    line-height: 20px;
+    border-radius: 50px 50px 0px 50px;
+  }
+
+  .safety-content .cust-safety{
+    margin-top: 1.5rem;
+    float: none;
+    width: 100%;
+  }
+  .safety-content .cap-safety{
+    margin-top: 2rem;
+    float: none;
+    width: 100%;
+  }
+
+}
+
+/* For Tablet ( Why-sewgays ) */
+@media (max-width:800px){
+  .why-segways{
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Customer Card */
+  .cust-card {
+    margin-top: 1.5rem;
+  } 
+  .cust-card .doorstep{
+    width: 30vw;
+  }
+
+  .cust-card .affordable{
+    left: 17rem;
+    width: 30vw;
+  }
+  .cust-card .quick-ride{
+    width: 30vww;
+  }
+
+  .segways-content hr{
+    margin-top: 2rem;
+  }
+
+  /* Captain Card */
+  .cap-card{
+    height: 80vh;
+  }
+  .cap-card h2{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+  }
+  .cap-card .zero-pressure{
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+    width: 30vw;
+  }
+
+  .cap-card .earning{
+    left: 15.8rem;
+    width: 30vw;
+  }
+  .cap-card .insured{
+    right: 0.5rem;
+    width: 30vw;
+  }
+
+}
+
+/* For Tablet ( Footer ) */
+@media (max-width:800px){
+
+  .footer .right{
+    right: 3.5rem;
+  }
+  .footer .last{
+    bottom: 4rem;
+  }
+  .footer .last .footer_line{
+    width: 95%;
+  }
+  .last .social-media {
+    float: right;
+    margin-right: 2.5rem;
+  }
+}   
+.icon{
+    display:none;
+}  
+
+

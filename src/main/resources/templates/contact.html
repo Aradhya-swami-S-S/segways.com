@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/contact.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&family=Raleway&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+    
+    <title>segways-Contact Us</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div th:replace="driversingup::navbar1"> </div>
+
+    <div class="container-back">
+        <div class="form">
+            <h1>Get in touch</h1>
+            <form th:action="@{/messagesuccess}"  method="post" th:object="${contact}">
+                <label for="text" class="name-lbl">Name</label><br>
+                <input type="text" name="fname" id="fname" placeholder="First Nanme" th:value="${contact.fname}">
+                <input type="text" name="lname" id="lname" placeholder="Last Name"  th:value="${contact.lname}"><br>
+
+                <label for="email" class="eml-lbl">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email " th:value="${contact.email}"><br>
+
+                <label for="message" class="message">Message</label><br>
+                <textarea id="message" name="message" rows="6" cols="50" th:value="${contact.message}"></textarea><br>
+
+                <button class="submit" id="submit">SUBMIT</button>
+
+            </form>
+        </div>
+
+    </div>
+    <script>
+        const fields = [
+            document.getElementById("fname"),
+            document.getElementById("lname"),
+            document.getElementById("email"),
+            document.getElementById("message")
+        ];
+
+        const myBtn = document.getElementById("submit");
+
+        myBtn.addEventListener("click",()=>{
+            
+
+            let allFieldsFilled = true;
+            for(let i=0; i < fields.length; i++){
+                if(!fields[i].value){
+                    allFieldsFilled = false;
+                    break;
+                }
+            }
+            if(allFieldsFilled){
+                alert("Message Sent 👍");
+            }
+            else{
+                alert("Please Fill in all fields");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

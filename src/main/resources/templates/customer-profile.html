@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer | Profile </title>
+    
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@250&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Customer | Profile </title>
+    
+           <!-- Style-sheet -->
+   <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/customer-home.css">
+    <link rel="stylesheet" href="/css/customer-profile.css">
+</head>
+
+<body>
+   <div th:replace="customer-home::navbar2"> </div>
+
+<div th:replace="customer-home::customernavbar"> </div>   
+    
+   <div class="profile">
+        <div class="image">
+            <img class="profile-image" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Image"
+                style="width: 160px;">
+        </div>
+
+        <div class="profile-info">
+            <form action="/updatecustomerprofile" method="post" >
+                     <div class="fname">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" th:value="${user.name}" name="name">
+                </div>
+
+
+
+    
+               
+
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" th:value="${user.email}" >
+                </div>
+                <div class="pnum">
+                    <label for="pnum">Mobile Number</label><br>
+                    <input type="tel" name="phonenumber" id="pnum-input" th:value="${user.phonenumber}"  />
+                </div>
+
+                <div class="gender">
+                    <label for="gender">Gender</label><br>
+                    <input type="text" name="gender" id="gender" th:value="${user.gender}">
+                </div> 
+                <div class="gender">
+                    <label for="password">Password</label><br>
+                    <input type="text" name="password" id="password" th:value="${user.password}">
+                </div>
+<input type="submit" value="Update" class="edit">
+                
+
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

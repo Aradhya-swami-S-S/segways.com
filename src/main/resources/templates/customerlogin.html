@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>segways-Customer-login</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style-main.css" type="text/css" /> 
+    <link rel="stylesheet" href="/css/customerlogin.css" type="text/css" />
+
+    <script>
+  // Get the form element
+// const form = document.getElementById('myForm');
+
+// // Add an event listener for form submission
+// form.addEventListener('submit', (event) => {
+//   // Prevent the default form submission behavior
+//   event.preventDefault();
+
+//   // Get the input values
+  
+//   const email = document.getElementById('email').value;
+//   const password = document.getElementById('password').value;
+
+//   // Perform validation
+//   if (name.trim() === '' || email.trim() === '' || password.trim() === '') {
+//     alert('Please fill in all the fields');
+//   } else if (!email.includes('@')) {
+//     alert('Please enter a valid email address');
+//   } else {
+//     // Redirect to another page
+//     window.location.href = 'customer-home';
+//   }
+// });
+
+        
+    </script>
+</head>
+
+<body>
+
+    <div th:replace="driversingup::navbar1"> </div>
+    <!-- Verify and log in
+ -->
+    <!-- Enter the OTP sent to your mobile -->
+    <div class="login" style="margin-top: 8rem;">
+
+
+        <div class="heading">
+            <h1>Verify and log in</h1>
+            <p>To get a ride</p>
+        </div>
+
+        <div class="input">
+
+            <form  name="custLogin" id="myForm" action="/logincustomer"  method="post"  >
+                <input type="email" name="email" id="email" value="" placeholder="Enter your Email" required>
+                <input type="password" name="password" id="password" placeholder="Enter password" required>  
+                
+            <input type="submit" id="btn" class="btn" value="Log in" > 
+            </form>
+            
+        </div>
+
+    </div>
+
+    <div class="down_content">
+        <p>New to Segways? <a href="./customersignup"> Join now</a></p>
+    </div>
+  
+  <!--    <script>   
+        const form = document.getElementById("myForm");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password"); 
+    
+        form.addEventListener("submit",() =>{
+
+        validate();    
+        
+      })   
+      const validate = () =>{
+      const emailVal  = email.value;
+       const passwordVal  = password.value;
+       var atposition =  emailVal.indexOf("@");  
+var dotposition=emailVal.lastIndexOf(".");   
+       if(emailVal === ""){
+          alert("email can't be blank"); 
+    
+      }  else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=emailVal.length){
+    alert("Enter valid Email")
+  }    
+       else if(passwordVal === ""){
+        alert("password can't be blank");
+      } else if(passwordVal.length <= 5){
+          alert(" password min 6 characters")
+      } 
+      else{  
+    	  alert("logged in successfully");
+    //    window.location.assign("customer-home")
+      }   
+    }
+                
+            
+        </script>   -->
+</body>
+
+</html>

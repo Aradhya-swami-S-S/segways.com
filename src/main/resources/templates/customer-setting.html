@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@250&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+
+    <!-- Style-sheet -->
+    <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/customer-home.css">
+    <link rel="stylesheet" href="/css/customer-setting.css">
+
+    <title>Customer | Setting</title>
+</head>
+
+<body>
+    <div th:replace="customer-home::navbar2"> </div>
+
+   <div th:replace="customer-home::customernavbar"> </div>   
+
+    <div class="setting-container">
+        <div class="setting">
+            <h1>General | Settings</h1>
+            <ul class="general-setting-ul">
+                <li>
+                    <a href="./customer-profile"><i class="fa-regular fa-user"></i></a>
+                    <a href=""><b>Profile Setting</b></a>
+                </li>
+
+                <li id="fav">
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><b>Favorites</b></a>
+                    <div id="fav-hide">
+                        You have not added any Favorite rides
+                    </div>
+                </li>
+
+                <li id="abt">
+                    <a href="" ><i class="fa-solid fa-circle-info"></i></a>
+                    <a href="" ><b>About</b></a>
+                    <div id="about-list">
+                        <ul>
+                            <li><a href="https://www.rapido.bike/Privacy">Terms & Conditions</a></li>
+                            <li><a href="https://www.rapido.bike/CustomerTerms">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+                    <a href="../index.html"><b>Logout</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- <script>
+        var hover = document.getElementById('abt');
+        var hiddenDiv = document.getElementById('about-list');
+
+        hover.addEventListener('mouseover', function handleMouseOverEvent() {
+            hiddenDiv.style.display = 'block';
+        });
+
+        hover.addEventListener('mouseout', function handleMouseOutEvent() {
+            hiddenDiv.style.display = 'none';
+        });
+    </script> -->
+</body>
+
+</html>

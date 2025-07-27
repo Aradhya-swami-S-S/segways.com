@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main {
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 20px;
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.otp {
+    display: inline-block;
+}
+
+input,
+select,
+label {
+    display: block;
+}
+
+.main h1 {
+    font-size: 2.5em;
+}
+
+.input {
+    margin-top: 10px;
+
+}
+
+input {
+    letter-spacing: 2px;
+    font-size: 18px;
+    background-color: white;
+border: none; 
+border-radius: 2px;
+
+}
+
+
+
+
+
+
+
+.name {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border: none;
+
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    color: #7a7979 
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #7a7979;
+    border: none;
+}
+
+.input .select {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border:none;
+    font-size: 18px;
+    color: #7a7979;
+}
+
+.input .email {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+
+
+.underline {
+    color: #7a7979;
+}
+
+.font_size {
+    font-size: 18px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}   
+.inline-block-1{
+    display: inline-block;
+}
+
+.login_link {
+    width: 40%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.login_link a {
+    display: inline-block;
+    margin-left: 5px;
+}     
+.submit {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+     font-weight: bold;
+    background-color: white; 
+  
+}   
+#gender-label{
+   margin-right: 1.5rem;
+   margin-left: 0.8rem;
+   font-size: 20px;
+}
+#male,#female,#other{
+   display: inline-block;
+   width: 5%;
+   padding: 0;
+}
+
+@media (max-width:540px){
+
+    .main{
+        width: 300px;
+    } 
+    .number {
+        width: 100%;
+    }  
+    .otp{
+        width: 100%;
+    }  
+    .inline-block-1{
+        display: inline;
+
+    }  
+    .main h1{
+      font-size: 2em;
+    }
+}

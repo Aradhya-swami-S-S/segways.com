@@ -1,0 +1,14 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:action": {
+            "context": "form"
+        },
+        "th:src": {
+            "context": "img"
+        },
+        "th:href": {
+            "context": "link"
+        }
+    }
+}

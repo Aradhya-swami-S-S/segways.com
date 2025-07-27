@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.menu-back {
+    position: relative;
+    top: 1rem;
+}
+
+.menu-back .menu {
+    position: absolute;
+    top: 3.5rem;
+    left: 15rem;
+    padding: 1rem 0.5rem;
+    background-color: #efefef;
+    border-radius: 15px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.menu-back .menu .menu-list {
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+.menu-list li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 2rem;
+
+}
+
+.menu-list li a i {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 0.3rem;
+}
+
+
+.menu-list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+.location {
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+    background-color: #efefef;
+    width: 95%;
+    padding: 2.5rem 0rem;
+    border-radius: 15px;
+    font-family: 'Nunito', sans-serif;
+    /* border: 1px black solid; */
+}
+
+.location .loc-head {
+    text-align: center;
+}
+
+.destination .inputs {
+    padding: 0rem 1.5rem;
+    margin-top: 0.7rem;
+}
+
+.destination .inputs input {
+    border: none;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+}
+
+
+.destination .inputs #from,
+#to {
+    width: 30%;
+    margin-top: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.destination .inputs #to {
+    margin-left: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+
+
+.destination .inputs #date {
+    margin-left: 0.5rem;
+    padding: 1.5rem 1rem;
+    width: 18%;
+
+}
+
+.destination .inputs #time {
+    margin-left: 0.5rem;
+    padding: 1.5rem 1rem;
+    width: 18%;
+}
+
+
+
+.destination .search {
+    /*button*/
+    padding: 1rem;
+    width: 25%;
+    border: none;
+    color: white;
+    background-color: rgb(77, 76, 76);
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-left: 25rem;
+}
+
+/* Gender selection */
+.selection{
+    position: absolute;
+    top: 15.5rem;
+    left: 1rem;
+    padding: 1rem;
+    width: 25%;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+}
+.selection .gender-select{
+    padding: 0.5rem;
+}
+.selection  input{
+    margin:1rem 1rem 0rem;
+}
+.selection .vehicle-type{
+    margin-top: 1rem;
+}
+
+
+
+.hidden{
+    display: none;
+}
+/* search cards */
+.search-results,.search-results-2,.search-results-3,.search-results-4,.search-results-5 {
+   
+    position: relative;
+    left: 20rem;
+    padding: 1.5rem;
+    width: 70%;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+    margin-top: 1rem;
+
+}
+.search-card img{
+    border-radius: 10px;
+    background-color: #ededed;
+}
+.search-card .about-bike-name{
+    position: absolute;
+    top: 1.5rem;
+    left: 19rem;
+}
+
+.search-card .card-content{
+    float: right;
+    margin-top: 3rem;
+}
+.search-card .card-content h1{
+    text-align: center;
+}
+
+.search-card .card-content .btn{
+    padding: 1rem 2rem;
+    color: black;
+    border: none;
+    background-color: rgb(118,118,251);
+    margin-top: 0.3rem;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.search-card .about-card{
+    position: absolute;
+    bottom: 2rem;
+    left: 19rem;
+
+}
+.about-card table tr td{
+   padding: 0.3rem;
+}
+.about-card table tr td:nth-child(1){
+    color: rgb(118, 118, 251);
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@250&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+   
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- Style-sheet -->
+   <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/customer-home.css">
+<style>
+    
+
+form {
+  max-width: 500px;
+  margin-top: 70px; 
+margin-left:auto;
+margin-right:auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 5px;
+}
+
+fieldset {
+  margin-top: 10px;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+fieldset img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+ 
+ 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+   width: 100%;
+  padding: 5px;
+}
+</style>
+
+    <title>Customer-Home</title>
+
+</head>
+
+<body>
+    <div class="navbar-container"  th:fragment="navbar2">
+
+        <nav class="navbar" style="top: 0;">
+            <div class="nav-logo">
+                <img src="../images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" style="width:48px;">
+                <h3>segways</h3>
+            </div>
+
+            <div class="nav-items">
+                <ul class="nav">
+                    <li class="item-1"><a href="./customer-home">Home</a> </li>
+                    <li class="item"><a href="../index.html">About Us</a></li>
+                    <li class="item"><a href="../index.html">Safety</a></li>
+                    <li class="item"><a href="contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    
+        <div class="menu"  th:fragment="customernavbar"  >
+            <ul class="menu-list">
+                <li>
+                    <a href="./customer-profile"> <i class="fa-regular fa-user"></i></a>
+                    <a href="./customer-profile">Profile</a>
+                </li>
+                <li>
+                    <a href="./my-rides"><i class="fa-solid fa-clock-rotate-left"></i></a>
+                    <a href="./my-rides">My Rides</a>
+                </li>
+                <li>
+                    <a href="./orderstatusforcustomer"><i class="fa-solid fa-clock-rotate-left"></i></a>
+                    <a href="./orderstatusforcustomer">order status</a>
+                </li>
+                <li>
+                    <a href="./customer-notification"> <i class="fa-solid fa-bell"></i></a>
+                    <a href="./customer-notification">Notification</a>
+                </li>
+                <li>
+                    <a href="./customer-setting"><i class="fa-solid fa-wrench"></i></a>
+                    <a href="./customer-setting">Settings</a>
+                </li>
+                <li>
+                    <a href="./customer-support"><i class="fa-solid fa-headset"></i></a>
+                    <a href="./customer-support">Support</a>
+                </li>
+                <li>
+                    <a href="./customer-payments"> <i class="fa-solid fa-wallet"></i></a>
+                    <a href="./customer-payments">Payments</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-regular fa-star"></i></a>
+                    <a href="">Rating & Feedback</a>
+                </li>
+            </ul>
+        </div>
+
+ <form id="booking-form" action="/bookingride" method="post" th:object="${ride}">
+              <h1>Book Bike Taxi</h1>
+        
+              <label for="pickup-location">Pickup Location:</label>
+              <input type="text" id="pickup-location" name="pickupLocation" required th:value="${ride.pickupLocation}" />
+        
+              <label for="drop-location">Drop-off Location:</label>
+              <input type="text" id="drop-location" name="dropLocation" required  th:value="${ride.dropLocation}" />
+              <label for="distance">distance</label>
+              <input type="number" id="distance" name="distance" required th:value="${ride.distance}" />
+              <label for="pickup-time">Pickup Time:</label>
+              <input type="datetime-local" id="pickup-time" name="pickup_time" required  th:value="${ride.pickup_time}" />
+        
+              <fieldset>
+                <legend>Vehicle Type:</legend>
+                <label>
+                  <input type="radio" name="vehicle_type" value="Bike" th:field="*{vehicle_type}"/>
+                  <img src="../images/changesize.jpg" alt="Bike">
+                </label>
+                <label>
+                  <input type="radio" name="vehicle_type" value="scooty" th:field="*{vehicle_type}"/>
+                  <img src="../images/download.jpg" alt="scooty">
+                </label>
+              </fieldset>
+        
+              <fieldset>
+                <legend>Driver Gender:</legend>
+                <label>
+                  <input type="radio" name="gender" value="male" th:field="*{gender}"/>
+                  Male
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="female" th:field="*{gender}"/>
+                  Female
+                </label>
+              </fieldset>
+        
+              <button type="button" onclick="calculatePrice()">Calculate Price</button>
+              <p id="price" th:value="${ride.price}" >Price: </p>
+           <p id="bookingStatus" th:text="${ride.status}"></p>
+              <button type="submit" onclick="redirectToPayments()">Confirm Booking</button>  
+
+  <!--   -->
+            </form>     
+           
+ 
+ 
+<script>
+
+
+       function calculatePrice() {
+  var distanceInput = document.getElementById('distance');
+  var priceElement = document.getElementById('price');
+
+  // Get the value entered by the user and convert it to a number
+  var distance = parseFloat(distanceInput.value);
+
+  // Check if the entered distance is a valid number
+  if (!isNaN(distance)) {
+    // Calculate the price by multiplying the distance by 10
+    var price = distance * 8;
+
+    // Update the price in the priceElement
+    priceElement.textContent = price.toFixed(2) + ' Rs';
+  } else {
+    // If the entered distance is not a valid number, display an error message
+    priceElement.textContent = 'Invalid distance';
+  }
+}  
+       const datetimeInput = document.getElementById('pickup-time');
+       const currentDate = new Date().toISOString().split('T')[0];
+       datetimeInput.addEventListener('input', function() {
+    	   const selectedDate = this.value.split('T')[0];
+    	   if (selectedDate < currentDate) {
+    	     this.value = '';
+    	   }
+    	 });
+       function redirectToPayments() {
+    	   const bookingStatus = document.getElementById('bookingStatus');
+    	   bookingStatus.textContent = 'Booked';
+
+    	   const bookingActions = document.getElementById('bookingActions');
+    	   bookingActions.style.display = 'block';
+    	 }
+
+    	// function cancelBooking() {
+    	  // const bookingStatus = document.getElementById('bookingStatus');
+    	  // bookingStatus.textContent = 'Cancelled';
+
+    	//   const cancelButton = document.getElementById('cancelButton');
+    	 //  const completedButton = document.getElementById('completedButton');
+    	 //  cancelButton.style.display = 'none';
+    	  // completedButton.style.display = 'inline-block';
+
+    	 //  alert('Booking cancelled!');
+    	// }
+
+    //	 function markBookingCompleted() {
+    //	   const bookingStatus = document.getElementById('bookingStatus');
+   // 	   bookingStatus.textContent = 'Completed';
+
+    //	   const cancelButton = document.getElementById('cancelButton');
+    //	   const completedButton = document.getElementById('completedButton');
+    //	   cancelButton.style.display = 'none';
+    //	   completedButton.style.display = 'inline-block';
+
+    	  // alert('Booking marked as completed!');
+   // 	}
+
+
+ 
+
+    </script>
+
+        
+    
+
+    
+</body>
+
+</html>

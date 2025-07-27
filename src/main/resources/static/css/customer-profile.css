@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+
+.profile {
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.profile .image {
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    width: 18%;
+    height: 180px;
+    text-align: center;
+    padding: 0.6rem;
+    background-color: #eaeaea;
+    border-radius: 15px 0px 0px 15px;
+
+}
+
+.profile .profile-info {
+    position: absolute;
+    top: 10rem;
+    right: 11rem;
+    width: 50%;
+    padding: 1rem;
+    background-color: rgb(225, 225, 225);
+    border-radius: 15px;
+
+}
+
+.profile-info .fname {
+    width: 50%;
+    float: left;
+}
+
+.fname input,
+.lname input {
+    background-color: rgb(225, 225, 225);
+    padding: 0.5rem 1rem;
+    border: 1.5px solid black;
+    border-radius: 2px;
+    width: 90%;
+}
+
+.profile-info .lname {
+    width: 50%;
+    float: right;
+}
+
+
+.profile-info .email {
+    margin-top: 1rem;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+
+.email input {
+    background-color: rgb(225, 225, 225);
+    padding: 0.5rem 1rem;
+    border: 1.5px solid black;
+    border-radius: 2px;
+    width: 95%;
+}
+
+.profile-info .pnum{
+    margin-top: 1rem;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.pnum input{
+    background-color: rgb(225, 225, 225);
+    padding: 0.5rem 1rem;
+    border: 1.5px solid black;
+    border-radius: 2px;
+    width: 95%; 
+}
+
+.profile-info .gender{
+    margin-top: 1rem;
+    float: left;
+    clear: left;
+    width: 50%;
+}
+.gender input{
+    background-color: rgb(225, 225, 225);
+    padding: 0.5rem 1rem;
+    border: 1.5px solid black;
+    border-radius: 2px;
+    width: 90%; 
+}
+
+.profile-info .dob{
+    margin-top: 1rem;
+    float: right;
+    clear: right;
+    width: 50%;
+}
+.dob p{
+    background-color: rgb(225, 225, 225);
+    padding: 0.5rem 1rem;
+    border: 1.5px solid black;
+    border-radius: 2px;
+    width: 90%; 
+}
+.profile-info .member{
+    margin-top: 1rem;
+    float: left;
+    clear: left;
+    width: 50%;
+}
+.member p{
+    background-color: rgb(225, 225, 225);
+    padding: 0.5rem 1rem;
+    border: 1.5px solid black;
+    border-radius: 2px;
+    width: 90%; 
+}
+
+.profile-info .emg-contact{
+    margin-top: 1rem;
+    float: right;
+    clear: right;
+    width: 50%;
+}
+.emg-contact p{
+    background-color: rgb(225, 225, 225);
+    padding: 0.5rem 1rem;
+    border: 1.5px solid black;
+    border-radius: 2px;
+    width: 90%; 
+}   
+
+ .edit {
+            border: 2px solid white;
+            font-size: 20px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin: auto;
+            margin-top: 20px;
+             font-weight: bolder;
+        }   

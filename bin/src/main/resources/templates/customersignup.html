@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>segways-Customer-signup</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/customersignup.css">
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="navbar-container">
+
+        <nav class="navbar" style="top: 0;">
+            <div class="nav-logo">
+                <img src="../images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" style="width:80px">
+                <h3>segways</h3>
+            </div>
+
+            <div class="nav-items">
+                <ul class="nav">
+                    <li class="item-1"><a href="../index.html">Home</a> </li>
+                    <li class="item"><a href="../index.html">About Us</a></li>
+                    <li class="item"><a href="../index.html">Safety</a></li>
+                    <li class="item"><a href="contact">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <div class="dropdown">
+                <a class="login-link" href="#"><span>Login</span>
+                    <i class="fa-solid fa-caret-down"></i></a>
+                <div class="drop-items">
+                    <a href="driverlogin"><span>Captain</span></a>
+                    <a href="customerlogin"><span>User</span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="signup">
+
+        <div class="heading">
+            <h1>Create your segways Account</h1>
+            <p style="font-size: 18px;">Enter your details to create an account</p>
+        </div>
+
+
+        <form name="cust-signup" id="myForm" method="post"  action="/register">
+            <input type="text" name="name" id="name" placeholder="Enter  your Full name">
+            <input type="number" name="phonenumber" id="phone" placeholder="Enter you phone number" class="otp">
+            
+            <label for="gender" id="gender-label" style="display: inline-block; margin-top: 20px;">Select Your Gender</label>  
+            <div id="gender"> 
+             <input type="radio" name="gender" id="male" value="Male">Male
+             <input type="radio" name="gender" id="female" value="Female">Female
+             <input type="radio" name="gender" id="other" value="Other">Other</div>
+           
+            <input type="email" name="email" id="email" placeholder="Enter your Email " required style="margin-top: 20px;"> 
+            <input type="password" name="password" id="password" placeholder="Enter password">
+            <input type="password" name="cpassword" id="cpassword" placeholder="Confirm password">
+            <input type="submit" class="submit" value="Submit">
+
+        </form>
+    </div>
+
+
+    <div class="down_content">
+        <p>Already on Segways? <a href="./customerlogin"> Sign in</a></p>
+    </div>
+
+
+    <script>
+  
+        // Get the form element
+      const form = document.getElementById("myForm");
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+    
+      const password = document.getElementById("password");  
+      const cpassword = document.getElementById("cpassword");  
+      let regexnum = new RegExp(/(0|91)?[6-9][0-9]{9}/); 
+      form.addEventListener("submit",() =>{
+        
+        validate();    
+        
+      })    ;
+      
+      //  define validate function
+      const validate = () =>{
+        const formVal = form.value;
+      const nameVal  = name.value;
+      const emailVal  = email.value;
+const phoneVal = phone.value;
+    
+      const passwordVal  = password.value; 
+      const cpasswordVal  = cpassword.value;  
+      var atposition =  emailVal.indexOf("@");  
+var dotposition=emailVal.lastIndexOf("."); 
+      // sending error message  
+    
+      if(nameVal === ""){
+          alert("name can't be blank");
+    
+      } else if (nameVal.length <= 2){
+        alert("name min 3 charaters") ;
+    
+      } 
+      else if(emailVal === ""){
+          alert("email can't be blank"); 
+    
+      }  
+      else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=emailVal.length){
+    alert("Enter valid Email");
+  }    else if(phoneVal === ""){
+        alert("enter phone number");
+      }  else if  (phoneVal.length !== 10) {
+           alert("enter correct phone number");
+      }
+       else if(passwordVal === ""){
+        alert("password can't be blank");
+      } else if(passwordVal.length <= 5){
+          alert(" password min 6 characters");
+      } else if(cpasswordVal === ""){
+        alert(" confirm password can't be blank");
+      }  else if(cpasswordVal !== passwordVal){
+               alert("password doesn't match");
+      }
+      else{ 
+          alert("account created");
+//        window.location.assign("customerlogin");
+      }  
+      console.log(phoneVal);
+      }   ;     
+
+//       Mobile Number validation criteria:
+
+// The first digit should contain numbers between 6 to 9.
+// The rest 9 digit can contain any number between 0 to 9.
+// The mobile number can have 11 digits also by including 0 at the starting.
+// The mobile number can be of 12 digits also by including 91 at the starting
+    
+      
+      
+      
+      
+      
+      
+         
+      
+         
+            
+          
+      
+        </script>
+
+
+</body>
+
+</html>

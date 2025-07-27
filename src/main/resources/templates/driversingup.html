@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>segways-Captain-signup</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" th:href="@{/css/style-main.css}" type="text/css" />
+
+  <link rel="stylesheet" href="/css/driversingup.css">
+
+  
+</head>
+
+<body>
+
+  <div class="navbar-container" th:fragment="navbar1">
+
+    <nav class="navbar" style="top: 0;">
+      <div class="nav-logo">
+        <img src="../images/sports_motorsports_FILL0_wght400_GRAD0_opsz48.png" alt="brand-logo" width="48px">
+        <h3>segways</h3>
+      </div>
+
+      <div class="nav-items">
+        <ul class="nav">
+          <li class="item-1"><a href="../index.html">Home</a> </li>
+          <li class="item"><a href="../index.html">About Us</a></li>
+          <li class="item"><a href="../index.html">Safety</a></li>
+          <li class="item"><a href="contact">Contact Us</a></li>
+        </ul>
+
+      </div>
+      <div class="dropdown">
+        <a class="login-link" href="#"><span>Login</span>
+          <i class="fa-solid fa-caret-down"></i></a>
+        <div class="drop-items">
+          <a href="./driverlogin"><span>Captain</span></a>
+          <a href="customerlogin"><span>User</span></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="main">
+
+      <form  id="myForm"  th:action="@{/registerdriver}" method="post" th:object="${driver}" >
+      <!-- <i class="fa-solid fa-circle-xmark"></i> -->
+      <h1>Become a Captain</h1>
+      <div class="input">
+        
+          <input type="text" name="name" id="name" placeholder="Enter your Full Name" class="name" th:value="${driver.name}">  
+          <input type="number"  id="phone"name="phoneNum" placeholder="Enter your number" class="email" th:value="${driver.phoneNum}" />
+        
+       
+        <input type="text" name="dl" id="dl" placeholder="Enter your DL  number" th:value="${driver.dl}" />
+        <input type="email" name="email" id="email" placeholder="Enter your Email" class="email" th:value="${driver.email}" />
+        <label for="gender" id="gender-label" style="display: inline-block;  margin-top: 20px;">Select Your Gender</label>  
+         <div id="gender"> 
+            <input type="radio"  th:field="*{gender}" id="male"  name="gender"value="Male">Male
+             <input type="radio"  th:field="*{gender}" id="female" name="gender" value="Female">Female
+             <input type="radio"  th:field="*{gender}" id="other" name="gender"value="Other">Other</div>
+            <input type="password" name="password" id="password" placeholder="Enter your Password" class="inline-block password" style="margin-top: 20px;"  />
+        <input type="password" name="cpassword" id="cpassword" placeholder="Confirm your Password" class="inline-block password" >
+        
+
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox" class="inline-block-1"  required>
+          <p class="inline-block-1 font_size">I agree to Segway's<a href="https://www.rapido.bike/CaptainTerms" class="underline">Terms and Condition</a>
+          </p>
+        </div>
+
+      </div>
+      
+
+      
+      <input type="submit" class="submit" value="Submit">
+
+      
+
+    </form>
+  </div>
+  <div class="login_link">
+    <p>Already on segways ?<a href="driverlogin">Login</a></p>
+  </div>
+
+  <script>
+  
+    // Get the form element
+  const form = document.getElementById("myForm");
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const dl = document.getElementById("dl");
+  const select = document.getElementById("select"); 
+  const phone = document.getElementById("phone");
+
+  const password = document.getElementById("password");  
+  const cpassword = document.getElementById("cpassword");
+  let regex = new RegExp(/^(([A-Z]{2}[0-9]{2})( )|([A-Z]{2}-[0-9]{2}))((19|20)[0-9][0-9])[0-9]{7}$/);
+  form.addEventListener("submit",() =>{
+    
+    validate(event);    
+    
+  })    
+  
+  //  define validate function
+  const validate = (event) =>{
+    const formVal = form.value;
+  const nameVal  = name.value;
+  const emailVal  = email.value;
+  const dlVal  = dl.value;
+  const selectVal = select.value; 
+  const cpasswordVal = cpassword.value; 
+  const phoneVal = phone.value;
+
+  const passwordVal  = password.value;
+  var atposition =  emailVal.indexOf("@");  
+var dotposition=emailVal.lastIndexOf(".");   
+  // sending error message  
+
+  if(nameVal === ""){ 
+	  event.preventDefault();
+      alert("name can't be blank");
+
+  } else if (nameVal.length <= 2){ 
+	  event.preventDefault();
+    alert("name min 3 charaters") ;
+
+  }  
+ else if(phoneVal === ""){    
+	  
+	  event.preventDefault();
+        alert("enter phone number");
+      }  else if  (phoneVal.length != 10) { 
+    	  event.preventDefault();
+           alert("enter correct phone number");
+      }
+  else if(emailVal === ""){ 
+	  event.preventDefault();
+      alert("email can't be blank"); 
+
+  }   else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=emailVal.length){ 
+	  event.preventDefault();
+    alert("Enter valid Email");
+  }  
+  else if(selectVal === "select"){  
+	  event.preventDefault();
+      alert("select a city");
+
+  } 
+  else if(dlVal === ""){ 
+	  event.preventDefault();
+      alert("dl number can't be blank");
+  } else if (regex.test(dlVal) === false ){ 
+	  event.preventDefault();
+    alert("Enter correct dl number")
+
+  } else if(passwordVal === ""){ 
+	  event.preventDefault();
+    alert("password can't be blank");
+  } else if(passwordVal.length <= 5){ 
+	  event.preventDefault();
+      alert(" password min 6 characters");
+  }  else if(cpasswordVal === ""){ 
+	  event.preventDefault();
+    alert(" confirm password can't be blank");
+  } else if (cpasswordVal !== passwordVal){  
+	  event.preventDefault();
+    alert("confirm password does not match");
+  }
+  else{  
+      
+      alert("Account created successfully");
+//    window.location.assign("driverlogin");
+  }
+  }   ;
+
+
+
+  
+  
+  
+  
+  
+      // example license number
+  
+  // GJ-2420180   else if(document.driverSignup.city.value == "select"){
+          // alert("Please Select City");
+          // return false;
+  // RAH12071998 
+  // MH27 30123476102
+  // 12HR-37200602347 
+  // UP14 20160034761 
+  // UP14 20160034761 
+  // HR-0619850034761
+  
+  
+      //   Driving License
+  //     It should be 16 characters long (including space or hyphen (-)).
+  // The driving license number can be entered in any of the following formats:
+  // HR-0619850034761
+  //  OR 
+  // HR06 19850034761
+  // The first two characters should be upper-case alphabets that represent the state code.
+  // The next two characters should be digits that represent the RTO code.
+  // The next four characters should be digits that represent the license issued in a year.
+  // The next seven characters should be any digits from 0-9.
+  
+     
+        
+      
+  
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style-main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/driverhome.css">
+    <style>
+        body {
+            background-color: #efefef;
+        }
+
+        .order_container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .order_box {
+            border: 5px solid white;
+            padding: 10px;
+            margin-top:10px;
+        }
+
+        button {
+            padding: 10px 5px;
+            margin-top: 10px;
+            width: 100px;
+            font-size: 20px;
+            color: green;
+            border: none;
+            background-color: white;
+            font-weight: bold;
+
+        }
+
+        .Deny {
+            margin-left: 20px;
+            color: red;
+
+        }
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }  
+            .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #ccc;
+        }
+
+        .tab.active {
+            background-color: white;
+        } 
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px; 
+            width:80%; 
+            margin:auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div th:replace="captain-home::navbar3"> </div>
+    <div class="menu">
+        <ul class="menu-list">
+            <li>
+                <a href="./captainprofile" class="block
+                "> <i class="fa-regular fa-user"></i></a>
+                <a href="./captainprofile" class="block
+                ">Profile</a>
+            </li>
+            <li>
+                <a href="./captainorders" class="block
+                "><i class="fa-solid fa-clock-rotate-left"></i></a>
+                <a href="./captainorders" class="block
+                ">Orders</a>
+            </li>
+            <li>
+                <a href="./captainnotification" class="block
+                "> <i class="fa-solid fa-bell"></i></a>
+                <a href="./captainnotification" class="block
+                ">Notification</a>
+            </li>
+            <li>
+                <a href="./captainsetting" class="block
+                "><i class="fa-solid fa-wrench"></i></a>
+                <a href="./captainsetting" class="block
+                ">Settings</a>
+            </li>
+            <li>
+                <a href="./captainsupport" class="block
+                "><i class="fa-solid fa-headset"></i></a>
+                <a href="./captainsupport" class="block
+                ">Support</a>
+            </li>
+            <li>
+                <a href="./captainearnings" class="block"> <i class="fa-solid fa-wallet"></i></a>
+                <a href="./captainearnings" class="block">Total Earnings</a>
+            </li>
+            <hr>
+        </ul>
+    </div>  
+    <div class="tabs">
+        <div class="tab active" onclick="showTab('requested')">Requested Orders</div>
+        <div class="tab" onclick="showTab('completed')">Completed Orders</div>
+        <div class="tab" onclick="showTab('canceled')">Canceled Orders</div>
+    </div>
+    <div class="order_container">
+        <div class="request order_box" id="requestedTab">
+            <h1>Requested Orders</h1>  
+             <table   >
+        <thead>
+            <tr>
+                <th>pickup location</th>
+                <th>drop location</th>
+                <th>distance</th>
+                 <th>pickup time</th>
+                  <th>vehicle type</th>
+                   <th>price</th>
+                    <th>gender</th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="ride : ${bookedrides}">
+            <td th:text="${ride.pickupLocation}"></td>
+                <td th:text="${ride.dropLocation}"></td>
+                <td th:text="${ride.distance}"></td>
+                <td th:text="${ride.pickup_time}"></td>
+                <td th:text="${ride.vehicle_type}"></td>
+                <td th:text="${ride.price}"></td>
+                <td th:text="${ride.gender}"></td>
+                 <td>
+                
+                <form th:action="@{/cancelridecaptain}" method="POST" >
+                    <input type="hidden" name="id" th:value="${ride.id}" />
+                    <button type="submit">Cancel Ride</button>
+                </form> </td>
+                 <td>
+                
+                <form th:action="@{/completeridecaptain}" method="POST" >
+                    <input type="hidden" name="id" th:value="${ride.id}" />
+                    <button type="submit">Mark completed</button>
+                </form> </td>
+               
+                
+            </tr>
+        </tbody>
+    </table>
+            
+            <!-- Content for requested orders -->
+        </div>
+        <div class="completed order_box" id="completedTab" style="display: none;">
+            <h1>Completed Orders</h1>
+            <table   >
+        <thead>
+            <tr>
+                <th>pickup location</th>
+                <th>drop location</th>
+                <th>distance</th>
+                 <th>pickup time</th>
+                  <th>vehicle type</th>
+                   <th>price</th>
+                    <th>gender</th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="ride : ${completedrides}">
+            <td th:text="${ride.pickupLocation}"></td>
+                <td th:text="${ride.dropLocation}"></td>
+                <td th:text="${ride.distance}"></td>
+                <td th:text="${ride.pickup_time}"></td>
+                <td th:text="${ride.vehicle_type}"></td>
+                <td th:text="${ride.price}"></td>
+                <td th:text="${ride.gender}"></td>
+                
+               
+                
+            </tr>
+        </tbody>
+    </table>
+        </div>  
+        
+      
+        <div class="canceled order_box" id="canceledTab" style="display: none;">
+            <h1>Canceled Orders</h1> 
+             <table   >
+        <thead>
+            <tr>
+                <th>pickup location</th>
+                <th>drop location</th>
+                <th>distance</th>
+                 <th>pickup time</th>
+                  <th>vehicle type</th>
+                   <th>price</th>
+                    <th>gender</th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="ride : ${cancelledrides}">
+            <td th:text="${ride.pickupLocation}"></td>
+                <td th:text="${ride.dropLocation}"></td>
+                <td th:text="${ride.distance}"></td>
+                <td th:text="${ride.pickup_time}"></td>
+                <td th:text="${ride.vehicle_type}"></td>
+                <td th:text="${ride.price}"></td>
+                <td th:text="${ride.gender}"></td>
+                
+               
+                
+            </tr>
+        </tbody>
+    </table>
+            <!-- Content for canceled orders -->
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.getElementById('requestedTab').style.display = 'none';
+            document.getElementById('completedTab').style.display = 'none';
+            document.getElementById('canceledTab').style.display = 'none';
+
+            // Remove 'active' class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            // Show the selected tab content
+            document.getElementById(tabName + 'Tab').style.display = 'block';
+
+            // Add 'active' class to the selected tab
+            const selectedTab = document.querySelector('.tab[data-tab="' + tabName + '"]');
+            selectedTab.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
+        
+        
+    
+</body>
+
+</html>
